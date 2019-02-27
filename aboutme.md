@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: What doesn't destroy me makes me only stronger
+subtitle: What doesn't destroy me only makes me stronger
 ---
 
 ### Welcome to my blog!  

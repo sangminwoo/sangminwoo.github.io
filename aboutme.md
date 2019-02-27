@@ -1,16 +1,37 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: What does not kill me makes me stronger - Friedrich Wilhelm Nietzsche
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Welcome to my blog. I thrive on creative challenges and enjoy building strong relationships along the way.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- 2013 ~ 2019(expected): Kyungpook National University, Daegu, Republic of Korea
+  * Major : Electronics Engineering
+  * Minor : Computer Science and Engineering
+- Field of Interests : Deep Learning, Computer Vision
 
-What else do you need?
+### Personal History - Where I lived?
+#### March 1995 - 1999 : Los Angeles, USA
+In march of 1995, I was born in Los Angeles and raised by Korean parents.
 
-### my history
+#### 1999 - 2001 : Kyoto, Japan
+Moved to Kyoto which is located in the middle of Japan. Thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+#### 2001 - 2011 : Gwangju, Republic of Korea
+Gwangju is the first place I lived in Korea and I spent my most of school days in there.
+
+#### 2011 - Present : Daejeon, Republic of Korea
+In the senior year of high school, I moved to Daejeon. Also I served as an auxiliary police at Daejeon metropolitan police agency for about 2years.
+
+#### 2013 - Present : Daegu, Republic of Korea
+Currently I'm in Kyungpook National University(KNU).
+
+### PEACE
+
+I'm a **PEACE**ful Person
+- P stands for Passionate
+- E stands for Energetic
+- A stands for Adventurous
+- C stands for Collaborative
+- E stands for Embracing

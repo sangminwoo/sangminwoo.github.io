@@ -26,7 +26,7 @@ I'm a **Peace**ful Person
 In march of 1995, I was born in Los Angeles and raised by Korean parents.
 
 #### 1999 - 2001 : Kyoto, Japan
-Moved to Kyoto which is located in the middle of Japan. Thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
+Moved to Kyoto which and thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
 
 #### 2001 - 2011 : Gwangju, Republic of Korea
 Gwangju is the first place I lived in Korea and I spent my most of school days in there.

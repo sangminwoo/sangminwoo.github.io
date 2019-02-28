@@ -8,21 +8,21 @@ bigimg:
   - "/img/big_img/about_me3.jpg"
 ---
 
-### <i class="fa fa-home" aria-hidden="true"></i> Welcome to my blog!  
+### <i class="fas fa-home" aria-hidden="true"></i> Welcome to my blog!  
 I thrive on creative challenges and enjoy building strong relationships along the way.
 Explore my history below, and contact me directly to learn more.
 
-### <i class="fa fa-university" aria-hidden="true"></i> Education
+### <i class="fas fa-university" aria-hidden="true"></i> Education
 2013 ~ 2019(expected): **Kyungpook National University**, Daegu, Republic of Korea
 - Major in **Electronics Engineering**
 - Minor in **Computer Science and Engineering**
 
-### <i class="fa fa-laptop-code" aria-hidden="true"></i> Skills & Field of Interests
+### <i class="fas fa-laptop-code" aria-hidden="true"></i> Skills & Field of Interests
 - Programming Languages: Python, C, C++, JAVA
 - Deep Learning
 - Computer Vision
 
-### <i class="fa fa-dove" aria-hidden="true"></i> PEACE
+### <i class="fas fa-dove" aria-hidden="true"></i> PEACE
 I am a **Peace**ful Person
 - **P** stands for Passionate
 - **E** stands for Energetic
@@ -30,7 +30,7 @@ I am a **Peace**ful Person
 - **C** stands for Collaborative
 - **E** stands for Embracing
 
-### <i class="fa fa-map-marker-alt" aria-hidden="true"></i> Where I lived?
+### <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Where I lived?
 #### March 1995 - 1999 : Los Angeles, USA
 In march of 1995, I was born in Los Angeles and raised by Korean parents.
 

@@ -6,6 +6,7 @@ bigimg:
   - "/img/big_img/about_me1.jpg"
   - "/img/big_img/about_me2.jpg"
   - "/img/big_img/about_me3.jpg"
+image:
 ---
 
 ### <i class="fas fa-home" aria-hidden="true"></i> Welcome to my blog!  

@@ -1,0 +1,21 @@
+{
+    // Set basic file related options:
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    // Formation and editor options
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+        116
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    // General appearance
+    "window.zoomLevel": 0,
+
+    // cSpell Config
+    "cSpell.language": "en,de,de-DE"
+}

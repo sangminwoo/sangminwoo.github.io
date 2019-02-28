@@ -3,10 +3,10 @@ layout: page
 title: About me
 subtitle: What doesn't destroy me only makes me stronger
 bigimg:
-  - "/img/big_img1.jpg"
-  - "/img/big_img2.jpg"
-  - "/img/big_img3.jpg"
-  - "/img/big_img4.jpg"
+  - "/img/big_img1.JPG"
+  - "/img/big_img2.JPG"
+  - "/img/big_img3.JPG"
+  - "/img/big_img4.JPG"
 ---
 
 ### <i class="fa fa-home" aria-hidden="true"></i> Welcome to my blog!  
@@ -15,9 +15,13 @@ Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-university" aria-hidden="true"></i> Education
 2013 ~ 2019(expected): **Kyungpook National University**, Daegu, Republic of Korea
-  * Major in **Electronics Engineering**
-  * Minor in **Computer Science and Engineering**
-- Field of Interests : **Deep Learning, Computer Vision**
+- Major in **Electronics Engineering**
+- Minor in **Computer Science and Engineering**
+
+### <i class="laptop-code" aria-hidden="true"></i> Skills & Field of Interests
+- Programming Languages: Python, C, C++, JAVA
+- Deep Learning
+- Computer Vision
 
 ### <i class="fa fa-dove" aria-hidden="true"></i> PEACE
 I'm a **Peace**ful Person

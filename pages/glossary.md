@@ -7,6 +7,7 @@ big_img:
   - "/img/big_img/glossary_img1.jpg" : "Photo by Patrick Tomasso on Unsplash"
 show-avatar: true
 comments: true
+toc : true
 ---
 	
 |        Contents      |

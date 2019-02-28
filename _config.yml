@@ -55,8 +55,8 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
+ navbar-img: "/img/concrete-texture.png"
+ footer-img: "/img/concrete-texture.png"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
@@ -248,9 +248,13 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+gist:
+  noscript: false
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

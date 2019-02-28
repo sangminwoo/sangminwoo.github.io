@@ -6,7 +6,6 @@ subtitle: A to Z
 bigimg:
   - "/img/big_img/glossary_img1.jpg" : "Photo by Patrick Tomasso on Unsplash"
 show-avatar: true
-comments: true
 ---
 	
 # Contents

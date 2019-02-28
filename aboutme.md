@@ -3,10 +3,9 @@ layout: page
 title: About me
 subtitle: What doesn't destroy me only makes me stronger
 bigimg:
-  - "/img/big_img1.JPG"
-  - "/img/big_img2.JPG"
-  - "/img/big_img3.JPG"
-  - "/img/big_img4.JPG"
+  - "/img/big_img/about_me1.jpg"
+  - "/img/big_img/about_me2.jpg"
+  - "/img/big_img/about_me3.jpg"
 ---
 
 ### <i class="fa fa-home" aria-hidden="true"></i> Welcome to my blog!  
@@ -18,13 +17,13 @@ Explore my history below, and contact me directly to learn more.
 - Major in **Electronics Engineering**
 - Minor in **Computer Science and Engineering**
 
-### <i class="laptop-code" aria-hidden="true"></i> Skills & Field of Interests
+### <i class="fa fa-laptop-code" aria-hidden="true"></i> Skills & Field of Interests
 - Programming Languages: Python, C, C++, JAVA
 - Deep Learning
 - Computer Vision
 
 ### <i class="fa fa-dove" aria-hidden="true"></i> PEACE
-I'm a **Peace**ful Person
+I am a **Peace**ful Person
 - **P** stands for Passionate
 - **E** stands for Energetic
 - **A** stands for Adventurous

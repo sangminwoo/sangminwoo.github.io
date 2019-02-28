@@ -4,7 +4,7 @@ permalink: "glossary"
 title: Deep Learning & Machine Learning Glossary
 subtitle: A to Z
 big_img:
-  - '/img/big_img/glossary_img1.jpg' : "Photo by Patrick Tomasso on Unsplash"
+  - 'sangminwoo.github.io/img/big_img/glossary_img1.jpg' : "Photo by Patrick Tomasso on Unsplash"
 show-avatar: true
 comments: true
 ---

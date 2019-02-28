@@ -24,7 +24,10 @@ description: Deep Learning & Tech Blog
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Deep Learning: "deeplearning"
+  Deep Learning: 
+    - Deep Learning: "deeplearning"
+    - PyTorch: "pytorch"
+    - Glossary: "glossary"
   #Resources:
     #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     #- Learn markdown: "http://www.markdowntutorial.com/"

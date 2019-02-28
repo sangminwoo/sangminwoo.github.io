@@ -25,7 +25,7 @@ description: Deep Learning & Tech Blog
 navbar-links:
   About Me: "aboutme"
   Deep Learning: 
-    - Deep Learning: "deeplearning"
+    - Study: "study"
     - PyTorch: "pytorch"
     - Glossary: "glossary"
   #Resources:

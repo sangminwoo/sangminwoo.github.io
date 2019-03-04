@@ -26,11 +26,10 @@ navbar-links:
   About Me: "aboutme"
   Deep Learning: 
     - Study: "study"
-    - PyTorch: "pytorch"
     - Glossary: "glossary"
-  #Resources:
-    #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    #- Learn markdown: "http://www.markdowntutorial.com/"
+  Tech & ETC:
+    - Tech: "tech"
+    #- ETC: "etc"
   GitHub: "https://github.com/sangminwoo"
 
 # Image to show in the navigation bar - image must be a square (width = height)

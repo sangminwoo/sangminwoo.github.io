@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://sangminwoo.github.io/sitemap.xml

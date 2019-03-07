@@ -25,9 +25,9 @@ description: Deep Learning & Tech Blog
 navbar-links:
   About Me: "aboutme"
   Deep Learning: 
-    - cs231n: "cs231n"
+    - Posts: "posts"
     - Glossary: "glossary"
-  ETC:
+  LETURE & ETC:
     - Computer Vision: "computervision"
     - Data Mining: "datamining"
     - Linear Algebra: "linearalgebra"

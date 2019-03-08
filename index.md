@@ -20,12 +20,12 @@ css: '/css/extend-home.css'
       {%- assign gh-project = "Trash-Classification" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="far fa-trash-alt fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">Suggesting effective trash classification model using only a small number of annotated trash images.</p>
+        <p class="text-muted">Suggesting Effective Trash Classification Model using only a small number of Annotated Trash images.</p>
         <hr class="seperator">
         <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
         <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
@@ -37,12 +37,12 @@ css: '/css/extend-home.css'
       {%- assign gh-project = "PyTorchDL" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="far fa-file-code fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
         <hr class="seperator">
-        <p class="text-muted">DeepLearning Tutorials/Examples/Projects using PyTorch framework.</p>
+        <p class="text-muted">DeepLearning Tutorials/Examples/Projects using PyTorch Framework.</p>
         <hr class="seperator">
         <img src="https://img.shields.io/github/forks/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Fork" alt="Github" title="Github Forks">
         <img src="https://img.shields.io/github/stars/{{- gh-user -}}/{{- gh-project -}}.svg?style=social&label=Stars" alt="Github" title="Github Stars">
@@ -54,7 +54,7 @@ css: '/css/extend-home.css'
     {%- assign gh-project = "LeetCode" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
-          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>

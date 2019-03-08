@@ -6,7 +6,6 @@ subtitle: Deep Learning & Tech Blog
 bigimg:
   - 'img/LIOJ6712.JPG'
 use-site-title: true
-css: '/css/extend-home.css'
 ---
 
 <h1 class="text-center">Repositories</h1>
@@ -20,6 +19,7 @@ css: '/css/extend-home.css'
       {%- assign gh-project = "Trash-Classification" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fa fa-trash-alt fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
@@ -36,6 +36,7 @@ css: '/css/extend-home.css'
       {%- assign gh-project = "PyTorchDL" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fa fa-file-code-o fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>
@@ -52,6 +53,7 @@ css: '/css/extend-home.css'
     {%- assign gh-project = "LeetCode" -%}
       <a target="_blank" href="https://github.com/{{- gh-user -}}/{{- gh-project -}}" class="project-link" title="Go to Github Poject Page">
         <span class="fa-stack fa-4x">
+          <i class="fa fa-square fa-stack-2x stack-color"></i>
           <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
         </span>
         <h4>{{- gh-project -}}</h4>

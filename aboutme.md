@@ -18,12 +18,12 @@ Explore my history below, and contact me directly to learn more.
 - Major in **Electronics Engineering**
 - Minor in **Computer Science and Engineering**
 
-### <i class="fa fa-laptop-code"></i> Skills & Field of Interests
+### <i class="fa fa-laptop"></i> Skills & Field of Interests
 - Programming Languages: Python, C, C++, JAVA
 - Deep Learning
 - Computer Vision
 
-### <i class="fa fa-dove"></i> PEACE
+### <i class="fa fa-user"></i> PEACE
 I am a **Peace**ful Person
 - **P** stands for Passionate
 - **E** stands for Energetic
@@ -31,7 +31,7 @@ I am a **Peace**ful Person
 - **C** stands for Collaborative
 - **E** stands for Embracing
 
-### <i class="fa fa-map-marker-alt"></i> Where I lived?
+### <i class="fa fa-map-marker"></i> Where I lived?
 #### March 1995 - 1999 : Los Angeles, USA
 In march of 1995, I was born in Los Angeles and raised by Korean parents.
 

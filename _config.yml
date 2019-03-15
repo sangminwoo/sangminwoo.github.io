@@ -32,6 +32,7 @@ navbar-links:
     - Data Mining: "datamining"
     - Linear Algebra: "linearalgebra"
     - Random Process: "randomprocess"
+    - Tags: "tags"
   GitHub: "https://github.com/sangminwoo"
 
 # Image to show in the navigation bar - image must be a square (width = height)

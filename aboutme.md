@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: What doesn't destroy me only makes me stronger
+subtitle: What doesn't destroy me makes me stronger
 bigimg:
   - "/img/big_img/about_me1.jpg"
   - "/img/big_img/about_me2.jpg"

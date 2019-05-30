@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Hey, Chill Out!
+title: Chill Out!
 show-avatar: true
-subtitle: Deep Learning & Tech Blog 
+subtitle: Feel free to browse
 bigimg:
   - 'img/LIOJ6712.JPG'
 use-site-title: true

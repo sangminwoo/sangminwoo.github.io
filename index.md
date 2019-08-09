@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Chill
+title:  Chill
 show-avatar: true
 subtitle: Hello, Feel free to browse!
 bigimg:
   - 'img/LIOJ6712.JPG'
-use-site-title: false
+use-site-title: true
 css: '/css/extend-home.css'
 ---
 

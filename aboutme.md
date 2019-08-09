@@ -14,9 +14,10 @@ I thrive on creative challenges and enjoy building strong relationships along th
 Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-university" aria-hidden="true"></i> Education
-2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Republic of Korea
+2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
 - Intelligence Representation & Reasoning Lab
-2013 ~ 2019: **Kyungpook National University**, Daegu, Republic of Korea
+
+2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
 - Major in **Electronics Engineering**
 - Minor in **Computer Science and Engineering**
 
@@ -41,14 +42,14 @@ In march of 1995, I was born in Los Angeles and raised by Korean parents.
 #### 1999 - 2001 : Kyoto, Japan
 Moved to Kyoto and thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
 
-#### 2001 - 2011 : Gwangju, Republic of Korea
+#### 2001 - 2011 : Gwangju, Korea
 Gwangju is the first place I lived in Korea and I spent my most of school days in there.
 
-#### 2011 - 2013 : Daejeon, Republic of Korea
+#### 2011 - 2013 : Daejeon, Korea
 In the senior year of high school, I moved to Daejeon.
 
-#### 2013 - 2019 : Daegu, Republic of Korea
+#### 2013 - 2019 : Daegu, Korea
 Graduated from Kyungpook National University(KNU).
 
-#### 2019 - present : Gwangju, Republic of Korea
+#### 2019 - present : Gwangju, Korea
 Currently I'm in Gwangju Institute of Science and Technology(GIST).

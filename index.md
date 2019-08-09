@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Chill
+title:  Chill Blog
 show-avatar: true
 subtitle: Hello, Feel free to browse!
 bigimg:

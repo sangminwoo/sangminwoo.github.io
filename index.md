@@ -5,7 +5,7 @@ show-avatar: true
 subtitle: Hello, Feel free to browse!
 bigimg:
   - 'img/LIOJ6712.JPG'
-use-site-title: true
+use-site-title: false
 css: '/css/extend-home.css'
 ---
 

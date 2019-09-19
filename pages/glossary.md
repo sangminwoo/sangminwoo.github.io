@@ -85,6 +85,43 @@ Backpropagation
 ---------------------------
 역전파(Back propagation)는 신경망(Neural Network) 또는 피드포워드 연산 그래프(feedforward computational graph)에서 경사하강법(Gradient Descent)을 수행하기 위한 기본 알고리즘이다. 우선, 정방향 단계에서 각 노드의 출력값이 계산되고 이를 캐시(cache)한다. 이후 역방향 단계에서는 신경망의 출력으로부터 시작하여 각 매개변수에 대해 오차의 편미분(Partial Differential)이 계산되고, 연쇄법칙(Chain Rule)을 통해 역방향으로 전달된다. 이 과정을 반복적으로 거치면서 오차를 최소화 하는 방향으로 파라미터들이 업데이트 된다.
 
+Bag of Words
+---------------------------
+Bag of Words는 쉽게 말해 문장을 숫자로 표현하는 방법 중 하나이다. 가령, "How are you?" 라고 질문했을 때의 답변으로 "awesome thank you", "great thank you", "not bad not good"가 있을 수 있는데 각각은 다음과 같이 표현할 수 있다.
+
+[awesome, thank, you, great, not, bad, good] 
+awesome thank you [1,1,1,0,0,0,0] 
+great thank you [0,1,1,1,0,0,0] 
+not bad not good [0,0,0,0,2,1,1] 
+
+Bag of Word를 사용하는 이유는 다음과 같다. 
+1. 문장의 유사도(Sentence similarity)를 원소곱으로 측정할 수 있다.
+awesome thank you [1,1,1,0,0,0,0] X great thank you [0,1,1,1,0,0,0] = 2 
+great thank you [0,1,1,1,0,0,0] X not bad not good [0,0,0,0,2,1,1] = 0 
+2. ML model의 입력값으로 사용 가능하다. ML model은 기본적으로 함수이기 때문에 입력이 수치값이 되어야 하는데, 문장 그 자체는 수치값이 아니다. Bag of words를 통해 문장을 수치로 변환하면 ML model의 입력으로 사용 가능하다.
+
+반면, Bag of Words의 한계도 존재한다.
+1. Sparsity: 단어의 개수가 커지면 벡터의 차원이 무수히 커진다.
+2. Frequent words has more power
+가령 다음과 같은 문장이 있을 때, 
+the man like the girl 
+the man love the girl 
+the the the the the 
+
+Bag of Words에서는 위의 두 문장보다 아래 두 문장의 유사도가 더 크다고 판단된다. 
+[the, man, like, girl, love] 
+the man like the girl [2,1,1,1,0] 
+the man love the girl [2,1,0,1,1] 
+the the the the the [5,0,0,0,0] 
+
+the man like the girl [2,1,1,1,0] X the man love the girl [2,1,0,1,1] = 6 
+the man love the girl [2,1,0,1,1] X the the the the the [5,0,0,0,0] = 10 
+
+3. Ignoring word orders
+단어의 출현 순서를 무시한다. 즉, home run vs. run home 두 문장을 같은 것으로 판단한다.
+4. Out of vocabulary
+새로운 단어, 오타, 줄임말에 대응할 수 없다.
+
 Baseline
 ---------------------------
 모델간의 성능을 비교할 때, 참조(Reference)로써 사용되는 모델 또는 휴리스틱(Heuristic)을 의미한다. 기준(Baseline)은 모델 개발자가 특정 문제에 예상되는 최종 성능을 산정하는데 도움을 준다.
@@ -441,6 +478,24 @@ Nesterov Accelerated Gradient (NAG)
 Nesterov Accelerated Gradient(NAG)는 기본적으로 모멘텀 업데이트(Momentum update)와 유사하지만, gradient를 계산하는 방법이 미묘하게 다르다. Momentum update는 actual step을 계산할 때 현 위치를 기준으로 gradient step과 momentum step을 합한 방향으로 이동하기 때문에, 최적값에 도달했을 때 멈추지 못하고 관성에 의해 멀리 가버릴 수도 있다. 반면, NAG 방식의 경우는 일단 momentum step을 이동한 위치에서 gradient step을 내다본 후(“lookahead”) 이동 방향을 결정하게 되기 때문에, Momentum 방식에 비해 보다 효과적으로 이동할 수 있다. 결과적으로 NAG는 Momentum update의 빠른 이동속도에 대한 이점은 유지하면서, 멈춰야 할 시점에서 제동을 걸기에도 용이한 방식이다. 
 
 ![Alt text](/img/glossary/nesterov_accelerated_gradient.jpg "Nesterov Accelerated Gradient (NAG)")
+
+N-gram
+-----------------------------------
+N-gram은 n개의 token(Word 또는 Character)이 연속적으로 구성된 것을 말한다. "fine thank you"라는 문장이 있을 때, N-gram은 다음과 같이 구성된다.
+
+1-gram(unigram) 
+- Word level: [fine, thank you] 
+- Character level: [f, i, n, e,  , t, h, a, n, k,  , y, o, u] 
+
+2-gram(bigram)
+- Word level: [fine thank, thank you]
+- Character level: [fi, in, ne, e ,  t, th, ha, an, nk, k ,  y, yo, ou]
+
+3-gram(trigram)
+- Word level: [fine thank you]
+- Character level: [fin, ine, ne , e t,  th, tha, han, ank, nk , k y,  yo, you]
+
+이는 bag of words가 단어의 순서를 무시하는 단점을 어느정도 극복할 수 있으며, 다음 단어가 무엇이 오는지 예측하거나 오타를 발견 등 여러 task에도 사용할 수 있다. 가령 "machine learning is fun and is not boring"이라는 문장이 있을 때 bag of words에서는 [machine, learning, is, fun, and, not, boring] = [1, 1, 2, 1, 1, 1, 1]가 된다. 한 번 bag에 word를 집어넣는 순간 "not"이 fun 앞에 해당하는지 boring 앞에 해당하는지를 알 수 없게 된다. 즉, 다른 의미를 같은 표현으로 묶어버리게 된다. 반면, bag of bigram을 살펴보면 [machine learning, learning is, is fun, fun and, and is, is not, not boring] = [1, 1, 1, 1, 1, 1, 1]가 되어 문맥을 숫자로 표현할 수 있다. 또한 "quality, quarter, quit" 세 단어를 bag of bigram로 만들 경우, [qu, ua, al, li, it, ty, ar, rt, te, er, ui] = [3, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1]이 되어 "qwal"이라는 단어를 입력했을 때, "qw"를 오타로 인식하고 "qual"로 수정할 수 있다.
 
 Normalization
 ---------------------------

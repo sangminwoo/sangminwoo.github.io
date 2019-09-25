@@ -17,8 +17,7 @@ Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-university" aria-hidden="true"></i>  Education
 * 2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
-	- Intelligence Representation & Reasoning Lab
-
+	- [Intelligence Representation & Reasoning Lab](http://13.125.156.114/)
 * 2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
 	- Major in **Electronics Engineering**
 	- Minor in **Computer Science and Engineering**
@@ -30,6 +29,7 @@ Explore my history below, and contact me directly to learn more.
 - Deep Learning
 - Computer Vision
 - Natural Language Processing
+- Image Captioning
 
 ---
 

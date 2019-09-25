@@ -25,7 +25,7 @@ description:
 navbar-links:
   About: "aboutme"
   Deep Learning: 
-    - Papers: "paper"
+    - Papers: "papers"
     - CS231N: "cs231n"
     - CS224N: "cs224n"
     - Glossary: "glossary"

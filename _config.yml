@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Chill Blog
+title: SangminWoo
 
 # Short description of your site
 description:
@@ -23,7 +23,7 @@ description:
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
   Deep Learning: 
     - Posts: "posts"
     - Glossary: "glossary"

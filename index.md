@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  Chill Blog
+title:  Hello!
 show-avatar: true
-subtitle: Hello, Feel free to browse!
+subtitle: Feel free to browse!
 bigimg:
   - 'img/LIOJ6712.JPG'
 use-site-title: true

@@ -9,25 +9,31 @@ bigimg:
 image:
 ---
 
-### <i class="fa fa-home" aria-hidden="true"></i> Welcome to my blog!  
+### <i class="fa fa-home" aria-hidden="true"></i>  Welcome to my blog!  
 I thrive on creative challenges and enjoy building strong relationships along the way.
 Explore my history below, and contact me directly to learn more.
 
-### <i class="fa fa-university" aria-hidden="true"></i> Education
-2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
-- Intelligence Representation & Reasoning Lab
+---
 
-2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
-- Major in **Electronics Engineering**
-- Minor in **Computer Science and Engineering**
+### <i class="fa fa-university" aria-hidden="true"></i>  Education
+* 2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
+	- Intelligence Representation & Reasoning Lab
 
-### <i class="fa fa-laptop"></i> Skills & Field of Interests
-- Programming Languages: Python, C, C++, JAVA
+* 2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
+	- Major in **Electronics Engineering**
+	- Minor in **Computer Science and Engineering**
+
+---
+
+### <i class="fa fa-laptop"></i>  Skills & Field of Interests
+- Languages: Python, C, C++, JAVA
 - Deep Learning
 - Computer Vision
 - Natural Language Processing
 
-### <i class="fa fa-user"></i> PEACE
+---
+
+### <i class="fa fa-user"></i>  PEACE!
 I am a **Peace**ful Person
 - **P** stands for Passionate
 - **E** stands for Energetic
@@ -35,7 +41,9 @@ I am a **Peace**ful Person
 - **C** stands for Collaborative
 - **E** stands for Embracing
 
-### <i class="fa fa-map-marker"></i> Where I lived?
+---
+
+### <i class="fa fa-map-marker"></i>  Where I lived?
 #### March 1995 - 1999 : Los Angeles, USA
 In march of 1995, I was born in Los Angeles and raised by Korean parents.
 
@@ -53,3 +61,5 @@ Graduated from Kyungpook National University(KNU).
 
 #### 2019 - present : Gwangju, Korea
 Currently I'm in Gwangju Institute of Science and Technology(GIST).
+
+---

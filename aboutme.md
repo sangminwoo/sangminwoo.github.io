@@ -8,14 +8,17 @@ image:
 ---
 
 ### <i class="fa fa-home" aria-hidden="true"></i>  Welcome to my blog!  
+
 I thrive on creative challenges and enjoy building strong relationships along the way.
 Explore my history below, and contact me directly to learn more.
 
 ---
 
 ### <i class="fa fa-university" aria-hidden="true"></i>  Education
+
 * 2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
 	- [Intelligence Representation & Reasoning Lab](http://13.125.156.114/)
+
 * 2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
 	- Major in **Electronics Engineering**
 	- Minor in **Computer Science and Engineering**
@@ -23,6 +26,7 @@ Explore my history below, and contact me directly to learn more.
 ---
 
 ### <i class="fa fa-laptop"></i>  Skills & Field of Interests
+
 - Languages: Python, C, C++, JAVA
 - Deep Learning
 - Computer Vision
@@ -31,7 +35,9 @@ Explore my history below, and contact me directly to learn more.
 ---
 
 ### <i class="fa fa-user"></i>  PEACE!
+
 I am a **Peace**ful Person
+
 - **P** stands for Passionate
 - **E** stands for Energetic
 - **A** stands for Adventurous
@@ -41,6 +47,7 @@ I am a **Peace**ful Person
 ---
 
 ### <i class="fa fa-map-marker"></i>  Where I lived?
+
 #### March 1995 - 1999 : Los Angeles, USA
 In march of 1995, I was born in Los Angeles and raised by Korean parents.
 

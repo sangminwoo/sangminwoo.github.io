@@ -25,7 +25,9 @@ description:
 navbar-links:
   About: "aboutme"
   Deep Learning: 
-    - Posts: "posts"
+    - Papers: "paper"
+    - CS231N: "cs231n"
+    - CS224N: "cs224n"
     - Glossary: "glossary"
   GitHub: "https://github.com/sangminwoo"
 

@@ -29,7 +29,6 @@ Explore my history below, and contact me directly to learn more.
 - Deep Learning
 - Computer Vision
 - Natural Language Processing
-- Image Captioning
 
 ---
 

@@ -3,9 +3,7 @@ layout: page
 title: About me
 subtitle: What doesn't destroy me makes me stronger
 bigimg:
-  - "/img/big_img/about_me1.jpg"
-  - "/img/big_img/about_me2.jpg"
-  - "/img/big_img/about_me3.jpg"
+  - "/img/big_img/aboutme.jpg" : "Photo by Bryan Minear on Unsplash"
 image:
 ---
 

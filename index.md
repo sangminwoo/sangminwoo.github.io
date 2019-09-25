@@ -4,7 +4,7 @@ title:  Hello!
 show-avatar: true
 subtitle: Feel free to browse!
 bigimg:
-  - 'img/LIOJ6712.JPG'
+  - 'img/big_img/main.JPG' : "Photo by me"
 use-site-title: true
 css: '/css/extend-home.css'
 ---

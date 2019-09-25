@@ -4,7 +4,7 @@ permalink: "glossary"
 title: ML/DL Glossary
 subtitle: from A to Z
 bigimg:
-  - "/img/big_img/glossary_img1.jpg" : "Photo by Patrick Tomasso on Unsplash"
+  - "/img/big_img/glossary.jpg" : "Photo by Sandy Millar on Unsplash"
 show-avatar: true
 ---
 	

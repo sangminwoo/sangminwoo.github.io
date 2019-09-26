@@ -62,6 +62,10 @@ AlexNet
 ---------------------------
 알렉스넷(Alexnet)은 2012년도 이미지넷 대회(ImageNet Large Scale Visual Recognition Challenge, ILSVRC 2012)의 이미지 인식(Image Recognition) 분야에서 가장 큰 성능차이로 우승하며 CNN의 관심을 부활시켰다. 기본적으로 Convolutional Neural Networks (CNN) 구조로, 5개의 convolutional 레이어, maxpooling 레이어, 3개의 전연결층(Fully Connected Layer)과 1000개의 출력을 가지는 softmax로 구성되어 있다.
 
+All-in-focus image
+---------------------------
+All-in-focus image는 말 그대로 이미지 상의 모든(All) object들이 초점이 맞아(in-focus) 선명하게 보이는 이미지를 말한다. All-in-focus 이미지를 얻기 위해서는 서로 다른 Depth-of-Field(DoF)를 가지는 사진들을 연결하는 Multi-focus image fusion 기술이 필요하다.
+
 Autoencoder(AE)
 ---------------------------
 Input과 Output 노드의 개수가 같은 형태의 Neural Network. Input과 Output 노드의 수가 같으므로 항등 함수를 배우도록 학습된다. Autoencoder는 특히 차원 축소를 위해 사용하는 pre-training 알고리즘으로 볼 수 있다. Forward Propagation과 Back Propagation을 반복하면서 Output이 Input과 비슷해지도록(자기 자신을 재현하도록) 학습하고 모형을 생성한다. 이때 Input Layer와 Hidden Layer 사이에서는 정보 압축(encoding)이 일어나며, Hidden Layer와 Output Layer 사이에서는 정보 복원(decoding)이 일어난다. 이때 hidden layer의 노드 개수가 output layer의 노드 개수보다 적으므로 hidden layer는 input layer에 관한 정보를 압축해서 저장해야만 한다. 따라서 hidden layer는 input layer에 대한 Representative한 Feature를 저장하도록 학습되며 가중치 역시 최적화된다. 따라서 이 hidden layer의 output을 추출해서 이를 인풋 데이터의 압축된 feature으로 이용하면 다른 Task에 적용할 수 있다. (e.g. Classifier의 Input으로 Raw Input 대신 Autoencoder의 Hidden Layer의 Output을 Input으로 사용한다.)
@@ -248,9 +252,17 @@ Dense Layer
 ---------------------------
 밀집레이어(Dense Layer)는 전연결층(Fully Connected Layer)과 같은 뜻으로 사용된다.
 
+Depth of Field
+---------------------------
+Depth of Field(DOF)는 이미지 상에서 초점이 맞은것으로 인식되는 범위이다. 실제 사진에서는 초점면(focal plane)을 중심으로 서서히 흐려지는 현상이 나타나는데, 이 때 충분히 초점이 맞은것으로 인식되는 영역을 in-focus, 초점이 맞지않아 흐려지는 영역을 out-focus 라고 한다. 이 중 사진 상에서 in-focus된 object들 가운데 가장 먼 곳 까지의 거리를 DOF라고 한다. 즉, DOF가 크면 사진상으로 먼 곳까지도 선명하게 표현될 것이고, DOF가 작으면 흐려질 것이다.
+
 Discriminative model
 ---------------------------
 일반적으로 판별모델(Discriminative model)은 지도학습에 사용되며, 클래스 간의 의사결정 경계(decision boundary)를 모델링한다. 학습데이터에서 각각의 조건부 확률 분포(Conditional Probability Distribution), 를 학습하여 그 차이를 구분한다.
+
+Disparity Map
+---------------------------
+Disparity map은 스테레오 이미지 쌍 사이의 명확한 pixel 차이 또는 움직임을 나타낸다. 예를 들어, 한쪽 눈을 감은 상태에서 반대쪽 눈을 감는 동안 다시 빠르게 한쪽 눈을 떠보면 disparity를 몸소 느낄 수 있다. 가까이 있는 물체들은 그 위치가 상당히 많이 차이가 나는 반면, 멀리 있는 물체는 거의 움직이지 않는다. 그 움직임이 바로 disparity이다. 스테레오 카메라에서 얻은 한 쌍의 이미지에서 pixel간의 명확한 움직임을 측정할 수 있고, 그 intensity를 통해 만든 이미지가 Disparity Map이다. 
 
 Dithering
 ---------------------------
@@ -261,7 +273,7 @@ Dropout
 일반적으로 신경망에서 layer가 깊어질수록 학습 능력은 좋아지지만, 학습시간이 길어지고 과적합(overfitting)의 문제가 발생할 수 있다. layer의 개수가 많아졌을 때, 과적합을 억제하기 위한 해결책 중 하나로 망부분생략(Dropout)을 사용한다. 이는 아래의 그림과 같이 각 층의 노드 중 일정 비율을 생략(drop)하고 그 외의 노드만 사용해 학습을 진행하는 방법이다. 일정한 mini-batch 구간 동안 생략된 망에 대한 학습을 끝내면, 다시 무작위로 다른 뉴런들을 생략하여 반복적으로 학습을 수행한다. 다음은 dropout의 대표적인 2가지 효과이다.
 
 1. 투표(Voting) 효과: dropout을 무작위로 반복하게 되면, voting에 의한 평균 효과를 얻을 수 있기 때문에 결과적으로 regularization과 비슷한 효과를 얻게 된다.
-2. 강건(Robust)한 모델: 특정 뉴런이 bias나 weight가 큰 값을 가질 때, 그 영향으로 인해 다른 뉴런들의 학습속도가 느려지거나 제대로 진행되지 못하는 경우가 있다. 하지만 dropout을 사용하여 학습하게 되면, 다른 뉴런이 특정 뉴런의 bias나 weight의 영향을 받지 않기 때문에 결과적으로 뉴런들이 서로 동조화(co-adaptive) 되는 것을 방지할 수 있다. 즉, 특정 학습데이터나 자료에 영향을 받지 않는 강건(robust)한 망을 구성할 수 있다.
+2. 강건(Robust)한 모델: 특정 뉴런이 bias나 weight가 큰 값을 가질 때, 그 영향으로 인해 다른 뉴런들의 학습속도가 느려지거나 제대로 진행되지 못하는 경우가 있다. 하지만 dropout을 사용하여 학습하게 되면, 다른 뉴런이 특정 뉴런의 bias나 weight의 영향을 받지 않기 때문에 결과적으로 뉴런들이 서로 co-adaptive되는 것을 방지할 수 있다. 즉, 특정 학습데이터나 자료에 영향을 받지 않는 robust한 망을 구성할 수 있다.
 
 ![Alt text](/img/glossary/dropout.jpg "Dropout")
 
@@ -332,6 +344,10 @@ Gradient Descent
 ---------------------------
 경사하강법(Gradient Descent)는 학습 데이터의 조건에 따른 모델의 파라미터(parameter)를 기준으로 손실 함수(loss function)의 기울기(gradient)를 계산하여 손실을 최소화하는 방법을 말한다. 쉽게 말하자면, 이는 파라미터를 반복적으로 업데이트하면서 손실을 최소화하는 가중치(weihgt)와 편향(biase)의 가장 적절한 조합을 점진적으로 찾는 방식이다.
 
+Graph cut
+---------------------------
+Image segmentation, Denoising 등 energy minimization과 관련한 Computer Vision task에 많이 활용되었던 알고리즘이다. Energy minimization은 그래프에서 Maximum flow를 찾는 문제로 치환되는데 이를 max-flow min-cut 최적화 문제라고 한다. 예를 들어, 그래프의 각 node를 픽셀이라고 생각하고 edge의 가중치를 픽셀 사이의 유사도라고 가정할 때, 최소 비용으로 절단하는 방법을 찾는 문제인 것이다. 그렇게 찾은 절단 방법이 가장 좋은 image segmentation 방법이 된다.
+
 Grid Search
 ---------------------------
 하이퍼파라미터(Hyperparameter)를 Tuning하기 위한(최적조합을 찾기 위한) 기법으로, 일종의 Brute-force 알고리즘이다. 예를 들어, Regularization weight, 의 최적값을 찾고 싶다면, 일정한 후보값을 인간이 미리 선정하고 (e.g.  = {0.1, 0.3, 0.5, 0.8}) 해당 후보값으로 학습을 진행해보고 validation data set에 대해 가장 좋은 값이 나온 hyperparameter(e.g. =0.3)를 선택한다. 단점은 Brute-force 알고리즘이기 때문에 Tuning해야할 hyperparameter의 개수가 늘어남에 따라 연산량이 과도하게 증가하는 문제가 있다.
@@ -368,13 +384,17 @@ Hyperparameter
 I
 ========
 
+Image Registration(Alignment)
+---------------------------
+하나의 장면이나 대상을 다른 시간이나 관점에서 촬영할 경우, 영상은 서로 다른 좌표계에서 얻어지게 된다. 영상 정합(image registration)은 이와 같은 서로 다른 영상을 변형하여 하나의 좌표계에 나타내는 처리기법이다. 정합을 통해 서로 다른 측정 방식을 통해 얻은 영상이 어떻게 대응되는지를 알 수 있다. 영상 정합 알고리즘은 크게 intensity-based와 feature-based로 나뉜다. 고정된 영상을 target image라 하고, 맞추어질 영상을 source image라고 한다. 영상 정합은 source image를 공간적으로 변형해 target image에 맞추는 과정을 포함한다. intensity-based는 영상의 세기를 비교하는 방식이고, feature-based는 영상 속의 점, 선, 테두리 등을 찾아 서로 맞추는 방식이다. intensity-based는 그림을 통째로 비교해 정합하는 데 반해, feature-based는 둘 이상의 그림 속에서 여러 개의 특징을 찾아 비교한다. 두 영상 속에서 특징점 쌍의 개수가 해당 영상 변형에 필요한 최소 개수보다 많은 경우, RANSACE과 같은 방식으로 두 영상의 변환 관계를 계산할 수 있다. 영상 정합 알고리즘은 도메인에 따라 Spatial domain과 Frequency domain으로 나눌 수도 있다. Spatial domain 방식은 영상의 공간 속에서 그림의 픽셀 세기 패턴이나 특징을 맞추는 방식이다. Frequency domain 방식은 두 영상 간의 변형에 필요한 매개변수를 주파수 영역에서 직접 찾아내는 방식이다.
+
 Inference
 ---------------------------
 학습이 완료된 모델이 테스트 셋에 대하여 예측을 수행하는 과정을 추론(Inference)이라고 한다. 통계학에서는 특정 관찰 데이터에 맞게 분포의 매개변수를 조정하는 과정을 의미한다.
 
 Interpolation
 ---------------------------
-선형보간법(Interpolation)은 알려진 지점의 값 사이에 위치한 값을 알려진 값으로부터 추정하는 것을 말한다.
+보간법(Interpolation)은 알려진 지점의 값 사이에 위치한 값을 알려진 값으로부터 추정하는 것을 말한다.
 
 Iteration
 ---------------------------
@@ -450,6 +470,10 @@ Mean Squared Error(MSE)
 평균 제곱 오차. 대표적인 Cost Function 중 하나이다. 모델의 예측값(Prediction), 과 실제 타겟값(True target value), 과의 차이를 제곱해서 모두 더한 값들의 평균으로 정의된다. 모델의 성능을 측정(Measure)하는 지표로서 활용된다. 즉, MSE가 작을수록 더 좋은 모델임을 알 수 있다.
 
 ![Alt text](/img/glossary/mean_squared_error.jpg "Mean Squared Error(MSE)")
+
+Median Filter
+---------------------------
+중간값 필터(Median Filter)는 이미지나 신호로부터 노이즈를 제거하는 데 주로 이용되며, 영상처리에서는 일반적으로 전처리 단계에서 사용된다. 가령, edge detection을 수행하기 전에 이미지의 노이즈를 제거하는 방식이다. 특히, Salt&Pepper 노이즈 제거에도 뛰어나고 edge blurring이 덜하기 때문에 유용하게 사용된다. 예를 들어 filter size가 3x3이라고 할 때, 인접한 9개의 pixel들을 정렬하여 중간값을 취하는 방식이다.
 
 Metric
 ---------------------------
@@ -557,6 +581,10 @@ Overfitting이 발생한 상황(맨 오른쪽 그림)
 
 P
 =======
+
+Parallax
+---------------------------
+시차(Parallax)는 원래 천문학에서 사용하던 용어로, 고정된 먼 배경이 존재하는 상황에서 한 물체를 서로 다른 위치에서 바라보았을 때 발생하는 겉보기 위치의 차이를 말한다. 같은 물체라도 멀리서 볼 때는 느리게 움직이고 가까이서 볼 때는 빠르게 움직이는 현상도 motion parallax로 인한 효과이다. 예를 들어, 차를 탈 때 가까이 있는 나무들보다 멀리 떨어진 나무들이 더 느리게 움직이는 경우를 볼 수 있다. 또한 차가 빠르게 움직일 때도 구름은 거의 움직이지 않는다는 것을 알 수 있다. 이는 모두 시차로 인한 효과이며 깊이(depth)를 판단하는데 중요한 요소가 된다. 가령, 사람은 두 눈 사이의 거리로 인해 서로 다른 상이 맺히는데 이를 양안 시차라 하고 겹치는 두 상을 통해 물체의 깊이를 감지할 수 있다. 이와 유사하게 스테레오 비전 시스템은 사물의 3D좌표를 삼각측량하기 위해 시차를 이용한다.
 
 Parameter
 ---------------------------

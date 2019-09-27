@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: What doesn't destroy me makes me stronger
+title: About Me
+subtitle: What doesn't destroy me only makes me stronger
 bigimg:
   - "/img/big_img/aboutme.jpg" : "Photo by Bryan Minear on Unsplash"
 image:
@@ -16,54 +16,41 @@ Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-university" aria-hidden="true"></i>  Education
 
-* 2019 ~ Present **Gwangju Institute of Science and Technology**, Gwangju, Korea
+* M.S. 2019 ~ Present: **Gwangju Institute of Science and Technology**, Gwangju, Korea
 	- [Intelligence Representation & Reasoning Lab](http://13.125.156.114/)
 
-* 2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
+* B.S. 2013 ~ 2019: **Kyungpook National University**, Daegu, Korea
 	- Major in **Electronics Engineering**
 	- Minor in **Computer Science and Engineering**
 
 ---
 
-### <i class="fa fa-laptop"></i>  Skills & Field of Interests
+### <i class="fa fa-laptop"></i>  Field of Interests
 
-- Languages: Python, C, C++, JAVA
-- Deep Learning
-- Computer Vision
-- Natural Language Processing
+- **Machine Learning/Deep Learning** : Representation Learning, Metric Learning, GAN...
+- **Computer Vision + Natural Language Processing** : Image Captioning, Visual Storytelling...
+- Searching more and more to get interested!
 
 ---
 
-### <i class="fa fa-user"></i>  PEACE!
+### <i class="fa fa-user"></i>  I LOVE PEACE!
 
-I am a **Peace**ful Person
-
-- **P** stands for Passionate
-- **E** stands for Energetic
-- **A** stands for Adventurous
-- **C** stands for Collaborative
-- **E** stands for Embracing
+- **P** stands for Passion
+- **E** stands for Energy
+- **A** stands for Adventure
+- **C** stands for Collaboration
+- **E** stands for Embrace
 
 ---
 
 ### <i class="fa fa-map-marker"></i>  Where I lived?
 
-#### March 1995 - 1999 : Los Angeles, USA
-In march of 1995, I was born in Los Angeles and raised by Korean parents.
-
-#### 1999 - 2001 : Kyoto, Japan
-Moved to Kyoto and thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
-
-#### 2001 - 2011 : Gwangju, Korea
-Gwangju is the first place I lived in Korea and I spent my most of school days in there.
-
-#### 2011 - 2013 : Daejeon, Korea
-In the senior year of high school, I moved to Daejeon.
-
-#### 2013 - 2019 : Daegu, Korea
-Graduated from Kyungpook National University(KNU).
-
-#### 2019 - present : Gwangju, Korea
-Currently I'm in Gwangju Institute of Science and Technology(GIST).
+- **1995 - 1999  Los Angeles, USA** : In march of 1995, I was born in Los Angeles and raised by Korean parents.
+- **1999 - 2001  Kyoto, Japan**  : Moved to Kyoto and thanks to living in japan, I was able to speak three languages : Korean, English and Japanese.
+- **2001 - 2011  Gwangju, Korea** : Gwangju is the first place I lived in Korea and I spent my most of school days in there.
+- **2011 - 2013  Daejeon, Korea** : In the senior year of high school, I moved to Daejeon.
+- **2013 - 2019  Daegu, Korea** : Graduated from Kyungpook National University(KNU).
+- **2019 - present  Gwangju, Korea** : Return back to Gwangju! and currently I'm in Gwangju Institute of Science and Technology(GIST).
+- Guess Where am I heading next?
 
 ---

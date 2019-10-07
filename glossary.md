@@ -394,6 +394,10 @@ Hyperparameter
 I
 ========
 
+Image Fusion
+---------------------------
+++ Need to Fill ++
+
 Image Registration(Alignment)
 ---------------------------
 하나의 장면이나 대상을 다른 시간이나 관점에서 촬영할 경우, 영상은 서로 다른 좌표계에서 얻어지게 된다. 영상 정합(image registration)은 이와 같은 서로 다른 영상을 변형하여 하나의 좌표계에 나타내는 처리기법이다. 정합을 통해 서로 다른 측정 방식을 통해 얻은 영상이 어떻게 대응되는지를 알 수 있다. 영상 정합 알고리즘은 크게 intensity-based와 feature-based로 나뉜다. 고정된 영상을 target image라 하고, 맞추어질 영상을 source image라고 한다. 영상 정합은 source image를 공간적으로 변형해 target image에 맞추는 과정을 포함한다. intensity-based는 영상의 세기를 비교하는 방식이고, feature-based는 영상 속의 점, 선, 테두리 등을 찾아 서로 맞추는 방식이다. intensity-based는 그림을 통째로 비교해 정합하는 데 반해, feature-based는 둘 이상의 그림 속에서 여러 개의 특징을 찾아 비교한다. 두 영상 속에서 특징점 쌍의 개수가 해당 영상 변형에 필요한 최소 개수보다 많은 경우, RANSACE과 같은 방식으로 두 영상의 변환 관계를 계산할 수 있다. 영상 정합 알고리즘은 도메인에 따라 Spatial domain과 Frequency domain으로 나눌 수도 있다. Spatial domain 방식은 영상의 공간 속에서 그림의 픽셀 세기 패턴이나 특징을 맞추는 방식이다. Frequency domain 방식은 두 영상 간의 변형에 필요한 매개변수를 주파수 영역에서 직접 찾아내는 방식이다.

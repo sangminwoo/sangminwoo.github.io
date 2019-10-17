@@ -28,9 +28,11 @@ Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-laptop"></i>  Field of Interests
 
-- **Knowledge representation** : Representation Learning...
+- Computer Vision + Natural Language Processing
+	* Scene Graph Generation, Visual QA, Image Captioning...
 
-- **CV + NLP** : Scene Graph Generation, Visual QA, Image Captioning...
+- Machine Learning, Deep Learning
+	* Representation Learning, GAN...
 
 - Searching more and more to get interested!
 

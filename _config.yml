@@ -8,7 +8,8 @@ navbar-links:
     - Papers: "papers"
     - CS231N: "cs231n"
     - CS224N: "cs224n"
-  Glossary: "glossary"
+  Glossary:
+    - All: "glossary"
     - A: "glossary/a"
     - B: "glossary/b"
     - C: "glossary/c"

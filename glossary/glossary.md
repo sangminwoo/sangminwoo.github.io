@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: "glossary"
-title: ML/DL Glossary
-subtitle: from A to Z
+title: Glossary
+subtitle: A to Z
 bigimg:
   - "/img/big_img/glossary.jpg" : "Photo by Sandy Millar on Unsplash"
 show-avatar: true
@@ -10,6 +10,8 @@ comments: true
 ---
 	
 # Contents
+
+---
 
 | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|

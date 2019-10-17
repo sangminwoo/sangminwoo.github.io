@@ -8,7 +8,7 @@ layout: null
 
 body {
   font-family: 'Nanum Gothic', sans-serif; /* 'Lora', 'Times New Roman', serif; */
-  font-size: 18px;
+  font-size: 15px;
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
@@ -85,7 +85,7 @@ img::-moz-selection {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .disqus-comments {

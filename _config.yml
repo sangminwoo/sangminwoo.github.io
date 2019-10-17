@@ -5,9 +5,8 @@ url: "https://sangminwoo.github.io"
 navbar-links:
   About: "aboutme"
   Contents: 
-    - Papers: "papers"
+    - Paper Reading: "papers"
     - CS231N: "cs231n"
-    - CS224N: "cs224n"
   Glossary:
     - All: "glossary"
     - A-D: "glossary/atod"

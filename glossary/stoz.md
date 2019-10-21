@@ -158,6 +158,14 @@ VAE는 데이터가 생성되는 과정, 즉 데이터의 확률분포를 학습
 
 ![Alt text](/img/glossary/variational_autoencoder.jpg "Variational Auto-Encoder(VAE)")
 
+Visual Dialog
+---------------------------
+++Need to Fill++
+
+Visual Storytelling
+---------------------------
+++Need to Fill++
+
 Voting
 ---------------------------
 투표(Voting)은 앙상블 러닝(Ensemble Learning)에서 최종 결론을 도출할 때 사용되는 방법 중 하나로, 주로 분류를 위해 사용된다. 이중 다수결 투표(Majority Voting)는 말 그대로 다수결을 채택하며, 전체 모델 중 과반수가 예측한 결과를 최종 결론으로 도출한다. 이 경우 어떠한 결론도 과반수의 투표를 획득하지 못한다면, 안정적인 결론을 도출하기 어렵다는 단점이 있다. 또 다른 방법으로는 Weighted Voting이 있는데 이는 특정 모델들에 가중치를 주어 최종 결론을 도출한다.

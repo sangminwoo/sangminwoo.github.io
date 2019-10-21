@@ -43,6 +43,14 @@ Gradient 계산을 보면, 자코비안 행렬 안의 값들이 크다면 activa
 F
 ==========
 
+Feature Engineering
+---------------------------
+++Need to Fill++
+
+Few-shot Learning
+---------------------------
+++Need to Fill++
+
 Filter
 ---------------------------
 필터(Filter)는 커널(Kernel)이라고도 한다. CNN에서는 일반적으로 지도학습(supervised learning)의 방법을 사용하는데, 이는 라벨링된 이미지(labelled images)를 통해 CNN을 학습시켜야 함을 의미한다. CNN은 학습(training)을 통해 convolution filter의 weight를 최적화(optimize)하고 error를 최소화하는 filter의 모양을 스스로 형성한다. filter의 크기를 설정하는 것은 학습에 있어 매우 중요한데, 이는 앞단(입력 이미지)을 처리할 때 filter가 유의미한 특징(feature)을 추출할 수 있어야하기 때문이다.
@@ -82,11 +90,19 @@ Gradient Descent
 ---------------------------
 경사하강법(Gradient Descent)는 학습 데이터의 조건에 따른 모델의 파라미터(parameter)를 기준으로 손실 함수(loss function)의 기울기(gradient)를 계산하여 손실을 최소화하는 방법을 말한다. 쉽게 말하자면, 이는 파라미터를 반복적으로 업데이트하면서 손실을 최소화하는 가중치(weight)와 편향(bias)의 가장 적절한 조합을 점진적으로 찾는 방식이다.
 
-Graph cut
+Graph Convolutional Network
+---------------------------
+++Need to Fill++
+
+Graph-cut
 ---------------------------
 Image segmentation, Denoising 등 energy minimization과 관련한 Computer Vision task에 많이 활용되었던 알고리즘이다. Energy minimization은 그래프에서 Maximum flow를 찾는 문제로 치환되는데 이를 max-flow min-cut 최적화 문제라고 한다. 예를 들어, 그래프의 각 node를 픽셀이라고 생각하고 edge의 가중치를 픽셀 사이의 유사도라고 가정할 때, 최소 비용으로 절단하는 방법을 찾는 문제인 것이다. 그렇게 찾은 절단 방법이 가장 좋은 image segmentation 방법이 된다.
 
 Graphical model
+---------------------------
+++Need to Fill++
+
+Greedy Search
 ---------------------------
 ++Need to Fill++
 

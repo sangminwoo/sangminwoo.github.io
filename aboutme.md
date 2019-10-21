@@ -28,7 +28,7 @@ Explore my history below, and contact me directly to learn more.
 
 ### <i class="fa fa-laptop"></i>  Field of Interests
 
-- Computer Vision + Natural Language Processing
+- Vision & Language
 	* Scene Graph Generation, Visual QA, Image Captioning...
 
 - Machine Learning, Deep Learning

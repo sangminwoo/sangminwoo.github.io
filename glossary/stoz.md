@@ -111,7 +111,7 @@ Test Bed
 
 Transfer Learning
 ---------------------------
-충분한 양의 데이터셋(dataset)을 갖추는 것은 쉽지 않다. 때문에 합성곱 신경망(Convolutional Network)을 무작위 초기화(Random Initialization)를 통해 바닥부터 학습(training from scratch)시키는 사람은 거의 없다. 대신에 Image-Net(100개의 레이블에 대해 120만개의 이미지가 있다)과 같은 방대한 데이터셋에서 모델을 미리 학습(pre-train)시킨 다음, 이 모델을 초기화(Initialization) 또는 고정 특징 추출기(Fixed Feature Extractor)로써 사용한다. 이를 전이학습(Transfer Learning)이라고 한다. 다음은 전이학습의 2가지 주요 방식이다.
+충분한 양의 데이터셋(dataset)을 갖추는 것은 쉽지 않다. 때문에 합성곱 신경망(Convolutional Network)을 무작위 초기화(Random Initialization)를 통해 처음부터 학습(training from scratch)시키는 사람은 거의 없다. 대신에 Image-Net(100개의 레이블에 대해 120만개의 이미지가 있다)과 같은 방대한 데이터셋에서 모델을 미리 학습(pre-train)시킨 다음, 이 모델을 초기화(Initialization) 또는 고정 특징 추출기(Fixed Feature Extractor)로써 사용한다. 이를 전이학습(Transfer Learning)이라고 한다. 다음은 전이학습의 2가지 주요 방식이다.
 1. 합성곱 신경망의 미세조정(Fine-tuning): 무작위 초기화 대신, 신경망을 Image-Net 1000 데이터셋 등으로 미리 학습한(pre-trained) 신경망으로 초기화한다. 학습의 나머지 과정은 동일하다.
 2. 특징 추출기로써의 합성곱 신경망: 전연결층(Fully connected layer)을 제외한 모든 신경망의 가중치(weight)를 고정하고, 전연결층만 가중치를 학습한다.
 

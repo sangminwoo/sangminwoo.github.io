@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  Hello
+title:  sangminwoo.github.io
 show-avatar: true
-subtitle: feel free to browse
+subtitle: Talk about Vision & Language
 bigimg:
   - 'img/big_img/main.JPG'
 use-site-title: true

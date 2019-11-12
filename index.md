@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  sangminwoo.github.io
+title: Hello,
 show-avatar: true
 subtitle: Talk about Vision & Language
 bigimg:

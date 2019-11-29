@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Me
-subtitle: What doesn't destroy me only makes me stronger
+subtitle: Fake it until you make it
 bigimg:
   - "/img/big_img/aboutme.jpg" : "Photo by Bryan Minear on Unsplash"
 image:
@@ -29,7 +29,7 @@ Explore my history below, and contact me directly to learn more.
 ### <i class="fa fa-laptop"></i>  Field of Interests
 
 - Vision & Language
-	* Scene Graph Generation, Visual QA, Image Captioning...
+	* Visual QA, Image Captioning, Scene Graph Generation...
 
 - Machine Learning, Deep Learning
 	* Representation Learning, GAN...

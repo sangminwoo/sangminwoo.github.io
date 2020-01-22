@@ -132,9 +132,9 @@ mAP(mean average precision)
 
 Markov Chain
 ---------------------------
-++Need to Fill++
+Markov property를 지닌 이산확률과정(discrete-time stochastic process를 가리킨다. 한 상태(state)의 확률은 단지 그 이전 상태에만 의존한다는 것이 핵심. 즉, 한 상태에서 다른 상태로의 transition은 그동안 상태 전이에 대한 긴 history를 필요로 하지 않고 바로 직전 상태에서의 전이(transition)로 추정할 수 있다는 이야기이다.
 
-Maxinum A Posterior(MAP)
+Maximum A Posterior(MAP)
 ---------------------------
 한 학급에 남자와 여자가 각각 10명, 5명이 있다고 생각해보자. 여기서 남학생 중 키가 170 이상인 학생의 확률과 키가 170 이상인 학생 중 남학생일 확률 두 가지를 생각할 수 있는데, 둘 중 하나만 알면 반대의 경우는 근사적으로 알 수 있다. 여기서 이미 주어진 남녀의 비율은 prior, 알 수 있는것은 likelihood, 알고 싶은 것은 posterior이 된다. 아래의 경우에서는 남학생 중 키가 170 이상인 학생의 확률 P(키>170|성별=남자)를 알 수 있다고 가정하자.
 
@@ -155,6 +155,14 @@ Maxinum A Posterior(MAP)
 - P(p|D) \\(\propto)\\ P(D|p)P(p)  
 
 - \\(\hat{p}) = argmax_p {P(p|D)}\\)
+
+Maximum Entropy Model(MEM)
+----------------------------------
+자연어처리 분야에서는 Multinomial Logistic Regression을 Maximum Entropy Model이라 부른다. Maximum Entropy Model의 핵심은 feature vector이다. 연구자의 언어학적 사전지식을 모델링에 적극적으로 반영할 수 있기 때문에, 초기값 설정에만 개입할 수 있는 Hidden Markov Model 등과 비교해 강점이라고 말할 수 있다. (물론 feature들을 연구자가 일일이 수작업으로 지정해주어야 하기 때문에 반대로 최대 약점으로 꼽히기도 한다) 그러나 Maximum Entropy Model은 Hidden Markov Model처럼 sequence classifier가 아니라는 단점이 있다. sequence가 아닌 단일 관측치(single observation)에 대해서만 예측이 가능하다는 것이다.
+
+Maximum Entropy Markov Model(MEMM)
+----------------------------------
+Maximum Entropy Markov Model은 이름 그대로 Maximum Entropy Model과 Hidden Markov Model을 결합한 모델이다. MEMM은 Maximum Entropy Model의 유연한 feature 활용 능력을 바탕으로 sequence classify를 가능하게 하는 모델이다. hidden state는 markov chain을 따른다고 가정하되, sequence 예측에 첫글자, 분사형 등 다양한 feature를 활용하는 방식이다.
 
 Maximum Likelihood Estimation(MLE)
 ----------------------------------

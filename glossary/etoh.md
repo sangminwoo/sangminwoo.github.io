@@ -76,7 +76,7 @@ Generalization
 
 Generative Model
 ---------------------------
-생성모델(Generative Model)은 이미지와 같은 학습 데이터를 디지털 에센스(digital essence)로 압축(200GB의 이미지를 100MB의 가중치(weight)로 줄일 수 있다.)한다. 이를 통해 데이터의 고유한 특징(distinctive features)을 자연스럽게 인식하며, 신경망에서 실제 데이터에 대한 축소된 이해(reduced understanding)를 바탕으로 실제 데이터와 유사(similar)하거나 구별할 수 없는(indistinguishable) 데이터를 만들어낸다. 주로 비지도 학습(Unsupervised Learning)에 사용되며, 학습을 하면 할수록 더 현실적인 이미지를 만들어낼 수 있다. 생성모델의 예로는 유사한 이미지를 생성하기 위해 실제 이미지셋에 대해 훈련된 모델을 들 수 있다.
+Generative Model은 데이터 \\(X\\)가 생성되는 과정을 두 개의 확률모형, \\(P(Y)\\), \\(P(X|Y)\\)로 정의하고, Bayes' rule을 사용해 \\(P(Y|X)\\)를 간접적으로 도출하는 모델을 가리킨다. Generative model은 레이블 정보가 있어도 되고, 없어도 구축할 수 있다. 전자를 지도학습 기반의 generative model이라고 하며 선형판별분석(Linear Discriminant Analysis: LDA)이 대표적인 예이다. (LDA: 데이터 분포를 학습해 decision boundary를 만들어 데이터를 분류하는 모델) 후자는 비지도학습 기반의 generative model이라고 하며 Gaussian Mixture Model, Topic Modeling이 대표적인 예이다. (Topic Modeling 기법 가운데 하나인 Latent Dirichlet Allocation은 주어진 문서에 대하여 각 문서에 어떤 주제들이 존재하는지에 대한 확률모형이다) Generative model은 discriminative model에 비해 가정이 많은데, 그 가정이 실제 현상과 맞지 않는다면 generative model의 성능은 discriminative model보다 좋지 않을 수 있다. 반대로 가정이 잘 구축되어 있다면 이상치에도 robust하고 학습데이터가 적은 상황에서도 좋은 예측 성능을 보인다. generative model은 범주의 분포(distribution)을 학습하는 것이 목표가 된다. 또한 일반적인 bayesian inference와 마찬가지로 학습데이터가 많을수록 discriminative model과 비슷한 성능으로 수렴하는 경향이 있다. 아울러 generative model은 \\(P(X|Y)\\)를 구축하기 때문에 이 모델을 활용해 X를 샘플링할 수도 있다.
 
 Generative Adversarial Networks(GAN)
 ------------------------------------
@@ -132,6 +132,10 @@ Heuristic
 Hidden Layer
 ---------------------------
 히든 레이어(Hidden Layer)는 비지블 레이어(Visible Layer)와 반대되는 개념으로, 신경망(Neural Network)에서 입력 레이어(특성)와 출력 레이어(예측) 사이에 위치하는 합성 레이어를 말한다. 일반적으로 신경망에는 하나 이상의 히든 레이어가 포함된다.
+
+Hidden Markov Model(HMM)
+---------------------------
+Hidden Markov Model은 각 상태(state)가 Markov Chain을 따르되 은닉(hidden)되어 있다고 가정한다. 예컨대 당신이 100년 전 기후를 연구하는 학자인데, 주어진 정보는 당시 아이스크림 소비 기록뿐이라고 치자. 이 정보만으로 당시 날씨가 더웠는지, 추웠는지, 따뜻했는지를 알고 싶은 것이다. 우리는 아이스크림 소비 기론의 연쇄를 관찰할 수 있지만, 해당 날짜의 날씨가 무엇인지는 직접적으로 관측하기가 어렵다. Hidden Markov Model은 이처럼 관측치를 토대로, 관측치 뒤에 은닉되어 있는 상태(state)를 추정하고자 하는 것이다. HMM은 본질적으로 sequence classifier이다. 직전 상태에서 현재 상태로의 전이확률(transition probability)과 현재 상태에서 관측치를 관측할 확률인 방출확률(emission probability)을 토대로, 관측된 단어 시퀀스 W가 주어졌을 때 가장 확률이 높은 은닉 상태의 시퀀스 T를 찾기 때문이다.
 
 HOG(Histogram of Oriented Gradient)
 -----------------------------------

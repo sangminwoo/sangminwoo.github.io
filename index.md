@@ -2,7 +2,7 @@
 layout: page
 title: Hello,
 show-avatar: true
-subtitle: Talk about Vision & Language
+subtitle: Feel free to look around :)
 bigimg:
   - 'img/big_img/main.JPG'
 use-site-title: true

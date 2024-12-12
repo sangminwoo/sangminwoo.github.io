@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
   
@@ -103,11 +104,15 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link " href="/#experiences" data-target="#experiences"><span>Experiences</span></a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link " href="/#papers" data-target="#papers"><span>Publications</span></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="/#experiences" data-target="#experiences"><span>Experiences</span></a>
+          <a class="nav-link " href="/#others" data-target="#others"><span>Others</span></a>
         </li>
 
       </ul>
@@ -127,8 +132,10 @@
 
 <span class="js-widget-page d-none"></span>
 
-  <section id="about" class="home-section wg-about   " style="padding: 30px 0 20px 0;" >
-    <div class="container">
+
+
+<section id="about" class="home-section wg-about   " style="padding: 30px 0 20px 0;" >
+<div class="container">
 
 <div class="row">
   <div class="col-12 col-lg-4">
@@ -158,30 +165,41 @@
         </li>
 
         <li>
-          <a href="cv/CV_Sangmin_Nov_2023.pdf" target="_blank" rel="noopener"><i class="fas fa-user-circle"></i> <b>CV</b>
+          <a href="cv/CV_Sangmin_Woo_Dec_2024.pdf" target="_blank" rel="noopener"><i class="fas fa-user-circle"></i> <b>CV</b>
           </a>
         </li>
 
       </ul>
     </div>
   </div>
+
+ 
   <div class="col-12 col-lg-8">
-
     
-<br>
-<p>I am currently pursuing a Ph.D. degree in Electrical Engineering at <a href="https://kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>. In 2021, I completed an M.S. degree in Electrical Engineering and Computer Science at <a href="https://www.gist.ac.kr/" target="_blank" rel="noopener">GIST</a>. Prior to that, I obtained a B.S. degree in Electrical Engineering from <a href="https://www.knu.ac.kr/" target="_blank" rel="noopener">KNU</a> in 2019.</p>
-    
-<p>Humans are inherently multi-modal learners, with vision playing a pivotal role in shaping our understanding of the world.
-I am passionate about bridging the gap between machine perception and human-level understanding by harnessing the potential of <b>multi-modal learning</b>.</p>
+    <br>
+    <p>I am currently pursuing a Ph.D. degree in Electrical Engineering at <a href="https://kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>.</p>
+        
+    <p>Humans are inherently multi-modal learners, with <b>vision</b> playing a pivotal role in shaping our understanding of the world.
+    I am passionate about bridging the gap between machine perception and human-level understanding by harnessing the potential of <b>multi-modal learning</b>.</p>
 
-<p>My work explores the following, but not limited to:</p>
-<ul>
-    <li>Multi-modal: Vision + X ∈ {Language, Audio, Sketch, Graph, <i>etc.</i>}</li>
-    <li>Video/Image Understanding</li>
-    <li>Diffusion Models</li>
-</ul>
+    <p>My work explores the following, but not limited to:</p>
+    <ul>
+        <li>
+            <b>Multi-modal Learning</b>  <span class="badge badge-success">Multi-modal</span>
+            <ul>
+                <li>(High-level) Vision + X ∈ {Language, Audio, Sketch, <i>etc.</i>}</li>
+                <li>(Low-level) RGB + X {Depth, IR, Flow, <i>etc.</i>}</li>
+            </ul>
+        </li>
+        <li>
+            <b>Video/Image Understanding</b>  <span class="badge badge-danger">Video</span> <span class="badge badge-warning">Image</span>
+        </li>
+        <li>
+            <b>Generation & Diffusion Models</b>  <span class="badge badge-primary">Generation</span>
+        </li>
+    </ul>
 
-<p>I thrive on creative challenges and enjoy building strong relationships along the way. Explore my academic journey below, and contact me directly to learn more.</p>
+  <!-- <p>I thrive on creative challenges and enjoy building strong relationships along the way. Explore my academic journey below, and contact me directly to learn more.</p> -->
 
     <div class="row">
 
@@ -216,7 +234,7 @@ I am passionate about bridging the gap between machine perception and human-leve
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">Ph.D. in EE, KAIST, 2025 (Expected)</p>
+              <p class="course">Ph.D. in EE, KAIST, 2025</p>
             </div>
           </li>
           <li>
@@ -239,9 +257,72 @@ I am passionate about bridging the gap between machine perception and human-leve
     </div>
   </div>
 </div>
+</div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>News</h1>
+      <p>
+      <span class="badge badge-light">24.12</span> 1 paper got accepted to AAAI 2025! <br>
+      <span class="badge badge-light">24.09</span> I am excited to keep collaborating with the team remotely! <br>
+      <span class="badge badge-light">24.09</span> I had a fantastic summer internship with <a href="https://aws.amazon.com/" target="_blank" rel="noopener">Amazon AWS AI</a>! <br>
+      <span class="badge badge-light">24.07</span> 3 papers got accepted to ECCV 2024! <br>
+      <span class="badge badge-light">24.06</span> I joined <a href="https://aws.amazon.com/" target="_blank" rel="noopener">Amazon AWS AI</a> as a summer intern! 
+      </p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<!-- <section id="news" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>News</h1>
+        <p>
+        <span class="badge badge-light">News</span> I am excited to keep collaborating with the team remotely! <br>
+        <span class="badge badge-light">News</span> I had a fantastic summer internship with <a href="https://aws.amazon.com/" target="_blank" rel="noopener">Amazon AWS AI</a>! <br>
+        <span class="badge badge-light">News</span> 3 papers got accepted to ECCV 2024! <br>
+        <span class="badge badge-light">News</span> I joined <a href="https://aws.amazon.com/" target="_blank" rel="noopener">Amazon AWS AI</a> as a summer intern! 
+        </p>
+      </div>
+    </div>
+  </div> -->
+</section>
+
+
+
+
+<section id="experiences" class="home-section wg-experiences   " style="padding: 10px 0 10px 0;" >
+<div class="container">
+
+<div class="row">
+  
+    <div class="col-lg-12">
+    <h1>Research Experiences</h1>
+<ul>
+
+<li> <div style="float:left"><b>Amazon AWS AI (Remote)</b> </div><div style="float:right">Sep 2024 - Mar 2025</div> <br>
+    Research Intern<br>
+</li>
+<li> <div style="float:left"><b>Amazon AWS AI (Santa Clara, CA, US)</b> </div><div style="float:right">Jun 2024 - Sep 2024</div> <br>
+    Research Intern<br>
+</li>
+<li> <div style="float:left"><b>NAVER LABS (Suwon, Korea)</b> </div><div style="float:right">Apr 2023 - Aug 2023</div> <br>
+    Research Intern<br>
+</li>
+</ul>
+    </div>
+</div>
     </div>
   </section>
+
+  
 
 
   <section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
@@ -255,21 +336,154 @@ I am passionate about bridging the gap between machine perception and human-leve
     <div class="row">
         <ul class="ul-papers">
         <hr>
-          <b>2024</b>
+        
+        <b>2025</b>
+        
+        <!-- <li>
+            <div class="img">
+              <img src="/papers/images/2025_naacl_bbvpe.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span></span></p>
+            <p class="authors">Black-Box Visual Prompt Engineering for Mitigating Object Hallucination in Large Vision Language Models</span></p>
+            <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Kang Zhou, Yun Zhou, Shuai Wang, Patrick Guan, Haibo Ding, Lin Lee Cheong</span></p>
+            <p class="venue"><span style="color:#626567">NAACL 2025</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2410.17821">paper</a>
+              ]
+            </p>
+          </div>
+        </li> -->
+
+        <li>
+          <div class="img">
+            <img src="/papers/images/2025_aaai_dmp.png" class="img-responsive" alt="">
+          </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-primary">Generation</span></span></p>
+            <p class="authors">Diffusion Model Patching via Mixture-of-Prompts</span></p>
+            <p class="authors"><span style="color:#626567">Seokil Ham*, <b>Sangmin Woo*</b>, Jinyoung Kim, Hyojun Go, Byeongjun Park, Changick Kim (<b>*Equal Contribution</b>)</span></p>
+            <p class="venue"><span style="color:#626567">AAAI 2025</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2405.17825">paper</a> |
+              <a href="https://github.com/sangminwoo/DMP">code</a> |
+              <a href="https://sangminwoo.github.io/DMP/">project</a>
+              ]
+            </p>
+          </div>
+        </li>
+
+        <hr>
+
+        <b>2024</b>
+
+        <li>
+          <div class="img">
+            <img src="/papers/images/2024_arxiv_prodial.png" class="img-responsive" alt="">
+          </div>     
+        <div class="description">
+          <p class="authors"><span class="badge badge-secondary">Learning</span></span></p>
+          <p class="authors">Parameter Efficient Mamba Tuning via Projector-targeted Diagonal-centric Linear Transformation</span></p>
+          <p class="authors"><span style="color:#626567">Seokil Ham, Hee-Seon Kim, <b>Sangmin Woo</b>, Changick Kim</span></p>
+          <p class="venue"><span style="color:#626567">Arxiv 2024</span> </p>
+          <p class="resources">
+            [
+            <a href="https://arxiv.org/abs/2411.15224">paper</a>
+            ]
+          </p>
+        </div>
+      </li>
 
         <li>
             <div class="img">
-              <img src="/papers/images/submitted.png" class="img-responsive" alt="">
+              <img src="/papers/images/2024_arxiv_ritual.png" class="img-responsive" alt="">
             </div>
           <div class="description">
-            <p class="authors">A Paper on "Group Activity Recognition"</span></p>
-            <p class="authors"><span style="color:#626567">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Jinyoung Park, Yooseung Wang, Donguk Kim, Changick Kim</span></p>
-            <p class="venue"><span style="color:#626567">Submitted</span> </p>
-            <!-- <p class="resources">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span></span></p>
+            <p class="authors">RITUAL: Random Image Transformations as a Universal Anti-hallucination Lever in LVLMs</span></p>
+            <p class="authors"><span style="color:#626567"><b>Sangmin Woo*</b>, Jaehyuk Jang*, Donguk Kim*, Yubin Choi, Changick Kim (<b>*Equal Contribution</b>)</span></p>
+            <p class="venue"><span style="color:#626567">Arxiv 2024</span> </p>
+            <p class="resources">
               [
-              <a href="https://arxiv.org/abs/2311.00000">paper</a>
+              <a href="https://arxiv.org/abs/2405.17821">paper</a> |
+              <a href="https://github.com/sangminwoo/RITUAL">code</a> |
+              <a href="https://sangminwoo.github.io/RITUAL/">project</a>
               ]
-            </p> -->
+            </p>
+          </div>
+        </li>
+
+        <li>
+            <div class="img">
+              <img src="/papers/images/2024_arxiv_avisc.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span></span></p>
+            <p class="authors">Don’t Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models</span></p>
+            <p class="authors"><span style="color:#626567"><b>Sangmin Woo*</b>, Donguk Kim*, Jaehyuk Jang*, Yubin Choi, Changick Kim (<b>*Equal Contribution</b>)</span></p>
+            <p class="venue"><span style="color:#626567">Arxiv 2024</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2405.17820">paper</a> |
+              <a href="https://github.com/sangminwoo/AvisC">code</a> |
+              <a href="https://sangminwoo.github.io/AvisC/">project</a>
+              ]
+            </p>
+          </div>
+        </li>
+
+        <li>
+            <div class="img">
+              <img src="/papers/images/2024_eccv_flamingnet.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
+            <p class="authors">Flow-Assisted Motion Learning Network for Weakly-Supervised Group Activity Recognition</span></p>
+            <p class="authors"><span style="color:#626567">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Jinyoung Park, Yooseung Wang, Donguk Kim, Changick Kim</span></p>
+            <p class="venue"><span style="color:#626567">ECCV 2024</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2405.18012">paper</a>
+              ]
+            </p>
+          </div>
+        </li>
+
+        <li>
+            <div class="img">
+              <img src="/papers/images/2024_eccv_spdpnet.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-danger">Video</span></span></p>
+            <p class="authors">Spatio-Temporal Proximity-Aware Dual-Path Model for Panoramic Activity Recognition</span></p>
+            <p class="authors"><span style="color:#626567">Sumin Lee, Yooseung Wang, <b>Sangmin Woo</b>, Changick Kim</span></p>
+            <p class="venue"><span style="color:#626567">ECCV 2024</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2403.14113">paper</a>
+              ]
+            </p>
+          </div>
+        </li>
+
+        <li>
+            <div class="img">
+              <img src="/papers/images/2024_eccv_switch_dit.png" class="img-responsive" alt="">
+            </div>
+          <div class="description">
+            <p class="authors"><span class="badge badge-primary">Generation</span></span></p>
+            <p class="authors">Switch Diffusion Transformer: Synergizing Denoising Tasks with Sparse Mixture-of-Experts</span></p>
+            <p class="authors"><span style="color:#626567">Byeongjun Park, Hyojun Go, Jinyoung Kim, <b>Sangmin Woo</b>, Seokil Ham, Changick Kim</span></p>
+            <p class="venue"><span style="color:#626567">ECCV 2024</span> </p>
+            <p class="resources">
+              [
+              <a href="https://arxiv.org/abs/2403.09176">paper</a> |
+              <a href="https://github.com/byeongjun-park/Switch-DiT">code</a> |
+              <a href="https://byeongjun-park.github.io/Switch-DiT">project</a>
+              ]
+            </p>
           </div>
         </li>
 
@@ -278,33 +492,37 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2024_cvpr_harmonyview.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-primary">Generation</span></span></p>
             <p class="authors">HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D</span></p>
-            <p class="authors"><span style="color:#626567"><b>Sangmin Woo*</b>, Byeongjun Park*, Hyojun Go, Jinyoung Kim, Changick Kim (*Equal Contribution)</span></p>
-            <p class="venue"><span style="color:#626567">Arxiv 2023</span> </p>
+            <p class="authors"><span style="color:#626567"><b>Sangmin Woo*</b>, Byeongjun Park*, Hyojun Go, Jinyoung Kim, Changick Kim (<b>*Equal Contribution</b>)</span></p>
+            <p class="venue"><span style="color:#626567">CVPR 2024</span> <br>
+              <span style="font-weight:normal; color:#BB2222">Featured by <a href="https://huggingface.co/papers?date=2023-12-27">HuggingFace Daily Papers</a></span> <br>
+              <span style="font-weight:normal; color:#BB2222">Finalist, Qualcomm Innovation Fellowship 2024 Korea</span> </p>
             <p class="resources">
               [
               <a href="https://arxiv.org/abs/2312.15980">paper</a> |
               <a href="https://github.com/byeongjun-park/HarmonyView">code</a> |
-              <a href="https://byeongjun-park.github.io/HarmonyView/">project</a> |
+              <a href="https://byeongjun-park.github.io/HarmonyView">project</a> |
               <a href="https://huggingface.co/spaces/byeongjun-park/HarmonyView">demo</a>
               ]
             </p>
           </div>
         </li>
-
+        
         <li>
             <div class="img">
               <img src="/papers/images/2024_iclr_denoising.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-primary">Generation</span></span></p>
             <p class="authors">Denoising Task Routing for Diffusion Models</span></p>
-            <p class="authors"><span style="color:#626567">Byeongjun Park*, <b>Sangmin Woo*</b>, Hyojun Go*, Jinyoung Kim*, Changick Kim (*Equal Contribution)</span></p>
-            <p class="venue"><span style="color:#626567">Arxiv 2023</span> </p>
+            <p class="authors"><span style="color:#626567">Byeongjun Park*, <b>Sangmin Woo*</b>, Hyojun Go*, Jinyoung Kim*, Changick Kim (<b>*Equal Contribution</b>)</span></p>
+            <p class="venue"><span style="color:#626567">ICLR 2024</span> </p>
             <p class="resources">
               [
-              <a href="https://arxiv.org/abs/2310.07138">paper</a> <!-- |
-              <a href="https://github.com/sangminwoo/SVOL">code</a> |
-              <a href="https://github.com/sangminwoo/SVOL">project</a> -->
+              <a href="https://arxiv.org/abs/2310.07138">paper</a> |
+              <a href="https://github.com/byeongjun-park/DTR">code</a> |
+              <a href="https://byeongjun-park.github.io/DTR">project</a>
               ]
             </p>
           </div>
@@ -315,6 +533,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2024_wacv_sketch.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Sketch-based Video Object Localization</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, So-Yeong Jeon, Jinyoung Park, Minji Son, Sumin Lee, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">WACV 2024</span> </p>
@@ -334,14 +553,15 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_vcip_ahfu.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">AHFu-Net: Align, Hallucinate, and Fuse Network for Missing Multimodal Action Recognition</span></p>
             <p class="authors"><span style="color:#626567">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">VCIP 2023</span> <span style="font-weight:normal;color:#BB2222">Oral presentation</span></p>
-            <!-- <p class="resources">
+            <p class="resources">
               [
-              <a href="https://arxiv.org/abs/2310.20000">paper</a>
+              <a href="https://ieeexplore.ieee.org/document/10402736">paper</a>
               ]
-            </p> -->
+            </p>
           </div>
         </li>
 
@@ -350,14 +570,15 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_vcip_multi.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Multi-modal Social Group Activity Recognition in Panoramic Scene</span></p>
             <p class="authors"><span style="color:#626567">Donguk Kim, Sumin Lee, <b>Sangmin Woo</b>, Jinyoung Park, Muhammad Adi Nugroho, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">VCIP 2023</span> </p>
-            <!-- <p class="resources">
+            <p class="resources">
               [
-              <a href="https://arxiv.org/abs/2310.20000">paper</a>
+              <a href="https://ieeexplore.ieee.org/document/10402675">paper</a>
               ]
-            </p> -->
+            </p>
           </div>
         </li>
 
@@ -366,6 +587,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_cviu_cross.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Cross-Modal Alignment and Translation for Missing Modality Action Recognition</span></p>
             <p class="authors"><span style="color:#626567">Yeonju Park, <b>Sangmin Woo</b>, Sumin Lee, Muhammad Adi Nugroho, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">CVIU 2023</span> </p>
@@ -382,6 +604,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_tip_modality.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Modality Mixer Exploiting Complementary Information for Multi-modal Action Recognition</span></p>
             <p class="authors"><span style="color:#626567">Sumin Lee, <b>Sangmin Woo</b>, Muhammad Adi Nugroho, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">under review in TIP</span> </p>
@@ -398,6 +621,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_iccv_audio.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Audio-Visual Glance Network for Efficient Video Recognition</span></p>
             <p class="authors"><span style="color:#626567">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">ICCV 2023</span> <br>
@@ -415,6 +639,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_aaai_towards.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Towards Good Practices for Missing Modality Robust Action Recognition</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Sumin Lee, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">AAAI 2023 </span> <span style="font-weight:normal;color:#BB2222">Oral presentation</span></p>
@@ -432,6 +657,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2023_wacv_modality.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Modality Mixer for Multi-modal Action Recognition</span></p>
             <p class="authors"><span style="color:#626567">Sumin Lee, <b>Sangmin Woo</b>, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">WACV 2023</span> </p>
@@ -451,9 +677,10 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2022_arxiv_explore.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span> <span class="badge badge-danger">Video</span></span></p>
             <p class="authors">Explore and Match: Bridging Proposal-Based and Proposal-Free with Transformer for Sentence Grounding in Videos</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Jinyoung Park, Inyong Koo, Sumin Lee, Minki Jeong, Changick Kim</span></p>
-            <p class="venue"><span style="color:#626567">under review in MTA</span> <br>
+            <p class="venue"><span style="color:#626567">Arxiv 2022</span> <br>
               <span style="font-weight:normal; color:#BB2222">Finalist, 29th HumanTech Paper Award, Samsung Electronics Co., Ltd</span> </p>
             <p class="resources">
               [
@@ -469,6 +696,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2022_tnnls_tackling.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span><span class="badge badge-warning">Image</span></span></p>
             <p class="authors">Tackling the Challenges in Scene Graph Generation with Local-to-Global Interactions</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</span></p>
             <p class="venue"><span style="color:#626567">TNNLS 2022</span> </p>
@@ -485,6 +713,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2022_icip_temporal.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-warning">Image</span></span></p>
             <p class="authors">Temporal Flow Mask Attention for Open-Set Long-Tailed Recognition of Wild Animals in Camera-Trap Images</span></p>
             <p class="authors"><span style="color:#626567">Jeongsoo Kim, <b>Sangmin Woo</b>, Byeongjun Park, Changick Kim</span></p>
             <p class="venue"><span style="color:#626567">ICIP 2022</span> </p>
@@ -500,6 +729,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2022_appliedsciences_impact.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-secondary">Learning</span></span></p>
             <p class="authors">Impact of Sentence Representation Matching in Neural Machine Translation</span></p>
             <p class="authors"><span style="color:#626567">Heeseung Jung, Kangil Kim, Jong-Hun Shin, Seung-Hoon Na, Sangkeun Jung, <b>Sangmin Woo</b></span></p>
             <p class="venue"><span style="color:#626567">Applied Sciences 2022</span> </p>
@@ -519,6 +749,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2021_arxiv_what.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-success">Multi-modal</span><span class="badge badge-danger">Video</span></span></p>
             <p class="authors">What and When to Look?: Temporal Span Proposal Network for Video Visual Relation Detection</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</span></p>
             <p class="venue"><span style="color:#626567">under review in ESWA</span> </p>
@@ -536,6 +767,7 @@ I am passionate about bridging the gap between machine perception and human-leve
               <img src="/papers/images/2021_electronics_revisiting.png" class="img-responsive" alt="">
             </div>
           <div class="description">
+            <p class="authors"><span class="badge badge-secondary">Learning</span></span></p>
             <p class="authors">Revisiting Dropout: Escaping Pressure for Training Neural Networks with Multiple Costs</span></p>
             <p class="authors"><span style="color:#626567"><b>Sangmin Woo</b>, Kangil Kim, Junhyug Noh, Jong-Hun Shin, and Seung-Hoon Na</span></p>
             <p class="venue"><span style="color:#626567">Electronics 2021</span></p>
@@ -554,32 +786,7 @@ I am passionate about bridging the gap between machine perception and human-leve
   </section>
 
 
-<section id="experiences" class="home-section wg-experiences   " style="padding: 10px 0 10px 0;" >
-<div class="container">
-
-<div class="row">
-  
-    <div class="col-lg-12">
-    <h1>Research Experiences</h1>
-<ul>
-
-<li> <div style="float:left"><b>Computational Intelligence Lab @ KAIST</b> </div><div style="float:right">Sep 2021 - Present</div> <br>
-    Research Assistant<br>
-</li>
-<li> <div style="float:left"><b>Robot Vision Team @ NAVER LABS</b> </div><div style="float:right">Apr 2023 - Aug 2023</div> <br>
-    Research Intern<br>
-</li>
-<li> <div style="float:left"><b>Intelligence Representation and Reasoning Lab @ GIST</b> </div><div style="float:right">Sep 2019 - Aug 2021</div> <br>
-    Research Assistant<br>
-</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-<section id="activities" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
+<section id="others" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
 <div class="container">
 
 <div class="row">
@@ -587,8 +794,8 @@ I am passionate about bridging the gap between machine perception and human-leve
     <div class="col-lg-12">
     <h1>Academic Activities</h1>
 <ul>
-  <li>Reviewer at CVPR (2024 ~)</li>
-  <li>Reviewer at AAAI (2023 ~)</li>
+  <li>Reviewer at CVPR (2024 ~), ECCV (2024 ~)</li>
+  <li>Reviewer at NeurIPS (2024 ~), ICLR (2024 ~), ICML (2025 ~), AAAI (2023 ~). AISTATS (2025 ~) </li>
   <li>Reviewer at IEEE TNNLS, IEEE TCSVT</li>
 </ul>
     </div>
@@ -604,7 +811,8 @@ I am passionate about bridging the gap between machine perception and human-leve
     <div class="col-lg-12">
       <h1>Awards &amp; Honors</h1>      
 <ul>
-<li>Invited Paper Talk at CARAI Workshop ($ 100). Center for Applied Research in Artificial Intelligence. Oct, 2023</li>
+<li>Fianlist ($ 1,000), Qualcomm Innovation Fellowship 2024 Korea. Dec, 2024</li>
+<li>Invited Paper Talk at CARAI Workshop. Center for Applied Research in Artificial Intelligence. Oct, 2023</li>
 <li>Finalist, 29th HumanTech Paper Award, Samsung Electronics Co., Ltd. Dec, 2022</li>
 <li>Top Award ($ 10,000), LG Electronics Robot Contest, LG Electronics Co., Ltd. Dec, 2021</li>
 <li>Excellence Award ($ 500), Creative Space G A.I&IoT Makerthon, GIST. Nov, 2019</li>
@@ -719,7 +927,19 @@ I am passionate about bridging the gap between machine perception and human-leve
   </div>
 </div>
 
+<!-- Default Statcounter code for sangminwoo https://sangminwoo.github.io/ -->
+<script type="text/javascript">
+var sc_project=13002492; 
+var sc_invisible=1; 
+var sc_security="894dce66"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13002492/0/894dce66/1/" alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
 </body>
 </html>
-
-

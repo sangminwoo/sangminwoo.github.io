@@ -156,6 +156,11 @@
               </a>
             </li>
             <li>
+              <a href="https://www.linkedin.com/in/sangmin-woo-31052a198/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i> <b>LinkedIn</b>
+              </a>
+            </li>
+            <li>
               <a href="cv/cv_sangmin_woo_jan_2026.pdf" target="_blank" rel="noopener">
                 <i class="fas fa-user-circle"></i> <b>CV</b>
               </a>
@@ -1030,50 +1035,27 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     return;
   }
 
+  var fixedWhiteIds = ["about", "papers"];
+
   function setSectionColor(section, colorClass) {
     section.classList.remove("section-white", "section-gray");
     section.classList.add(colorClass);
   }
 
-  sections.forEach(function (section, index) {
-    var colorClass = (index % 2 === 0) ? "section-white" : "section-gray";
-    setSectionColor(section, colorClass);
-  });
-
-  var fixedWhiteIds = ["about", "papers"];
-
-  fixedWhiteIds.forEach(function (id) {
-    var section = document.getElementById(id);
-    if (section && section.classList.contains("home-section")) {
+  sections.forEach(function (section) {
+    if (fixedWhiteIds.indexOf(section.id) !== -1) {
       setSectionColor(section, "section-white");
     }
   });
 
-  function forceAdjacentGray(id) {
-    var section = document.getElementById(id);
-    if (!section) {
-      return;
-    }
-    var index = sections.indexOf(section);
-    if (index === -1) {
-      return;
-    }
+  var nonFixedSections = sections.filter(function (section) {
+    return fixedWhiteIds.indexOf(section.id) === -1;
+  });
 
-    var prev = sections[index - 1];
-    var next = sections[index + 1];
-
-    [prev, next].forEach(function (neighbor) {
-      if (!neighbor) {
-        return;
-      }
-      if (fixedWhiteIds.indexOf(neighbor.id) !== -1) {
-        return;
-      }
-      setSectionColor(neighbor, "section-gray");
-    });
-  }
-
-  fixedWhiteIds.forEach(forceAdjacentGray);
+  nonFixedSections.forEach(function (section, index) {
+    var colorClass = (index % 2 === 0) ? "section-gray" : "section-white";
+    setSectionColor(section, colorClass);
+  });
 })();
 </script>
 

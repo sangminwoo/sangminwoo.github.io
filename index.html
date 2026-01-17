@@ -23,6 +23,7 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   <link rel="stylesheet" href="/css/academic.css">
+  <link rel="stylesheet" href="/css/custom.css">
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Sangmin Woo">
   <link rel="manifest" href="/index.webmanifest">
 
@@ -305,7 +306,7 @@
   </div>
 </section> -->
 
-<section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
+<section id="papers" class="home-section wg-papers" style="padding: 20px 0 20px 0;" >
     <div class="container">
       
 <div class="row">
@@ -863,7 +864,7 @@
   </section>
 
 
-<section id="others" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
+<section id="others" class="home-section wg-blank" style="padding: 10px 0 10px 0;" >
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -882,7 +883,7 @@
 </section>
 
 
-<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
+<section id="awards" class="home-section wg-blank" style="padding: 20px 0 20px 0;" >
   <div class="container">
     <div class="row">  
       <div class="col-lg-12">
@@ -902,7 +903,7 @@
 </section>
 
 
-<section id="patents" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
+<section id="patents" class="home-section wg-blank" style="padding: 20px 0 20px 0;" >
   <div class="container">
     <div class="row">  
       <div class="col-lg-12">
@@ -1021,6 +1022,60 @@ href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/13002492/0/894dce66/1/" alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
+
+<script type="text/javascript">
+(function () {
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section.home-section"));
+  if (!sections.length) {
+    return;
+  }
+
+  function setSectionColor(section, colorClass) {
+    section.classList.remove("section-white", "section-gray");
+    section.classList.add(colorClass);
+  }
+
+  sections.forEach(function (section, index) {
+    var colorClass = (index % 2 === 0) ? "section-white" : "section-gray";
+    setSectionColor(section, colorClass);
+  });
+
+  var fixedWhiteIds = ["about", "papers"];
+
+  fixedWhiteIds.forEach(function (id) {
+    var section = document.getElementById(id);
+    if (section && section.classList.contains("home-section")) {
+      setSectionColor(section, "section-white");
+    }
+  });
+
+  function forceAdjacentGray(id) {
+    var section = document.getElementById(id);
+    if (!section) {
+      return;
+    }
+    var index = sections.indexOf(section);
+    if (index === -1) {
+      return;
+    }
+
+    var prev = sections[index - 1];
+    var next = sections[index + 1];
+
+    [prev, next].forEach(function (neighbor) {
+      if (!neighbor) {
+        return;
+      }
+      if (fixedWhiteIds.indexOf(neighbor.id) !== -1) {
+        return;
+      }
+      setSectionColor(neighbor, "section-gray");
+    });
+  }
+
+  fixedWhiteIds.forEach(forceAdjacentGray);
+})();
+</script>
 
 </body>
 </html>

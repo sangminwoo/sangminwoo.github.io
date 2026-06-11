@@ -1,0 +1,12 @@
+:root {
+  --section-white: #fff;
+  --section-gray: #f7f7f7;
+}
+
+.home-section.section-white {
+  background-color: var(--section-white);
+}
+
+.home-section.section-gray {
+  background-color: var(--section-gray);
+}

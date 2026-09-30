@@ -1,14 +1,17 @@
-# Minimal Theme
+# sangminwoo.github.io
 
-[Demo the Theme](http://orderedlist.github.com/minimal/)
+Source for https://sangminwoo.github.io. It is a single static page (`index.html`, `css/site.css`, `js/site.js`) served by GitHub Pages.
 
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
+## Updating
 
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
+- **News:** add an `<li>` at the top of the `news` list in `index.html`.
+- **Paper:** copy an existing `<li class="pub">` block into the right year. Topic tags are `multimodal`, `genai`, `agent`, `video`, `image`, and `learning`; the filter buttons use them.
+- **Thumbnail:** put the figure in `papers/images/` and make a small WebP next to it:
+  `cwebp -q 82 -resize 800 0 papers/images/NAME.png -o papers/images/NAME.webp`
+- **CV:** add the PDF to `cv/` and update the CV link in `index.html`.
 
-# License
+## Preview
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
+    python3 -m http.server 8000
 
-
-
+Then open http://localhost:8000.

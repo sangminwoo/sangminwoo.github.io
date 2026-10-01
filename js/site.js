@@ -23,36 +23,44 @@
   }, { passive: true });
   updateNav();
 
-  // Filter publications by topic tag. Chips map to tag classes, e.g. data-filter="genai" -> .tag.genai
-  var filter = document.querySelector('.pub-filter');
-  if (filter) {
-    var chips = Array.prototype.slice.call(filter.querySelectorAll('.chip'));
-    var pubs = Array.prototype.slice.call(document.querySelectorAll('.pub'));
-    var years = Array.prototype.slice.call(document.querySelectorAll('.pub-year'));
+  // Publications tabs. "Selected" shows cards for entries marked class="pub selected";
+  // "Full" lists every entry by year. Selected is the default.
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs [role="tab"]'));
+  var selectedList = document.getElementById('pub-selected');
+  if (tabs.length && selectedList) {
+    Array.prototype.forEach.call(document.querySelectorAll('#panel-full .pub.selected'), function (pub) {
+      var card = pub.cloneNode(true);
+      var title = card.querySelector('h4.pub-title');
+      if (title) {  // no year headings in this view, so titles sit one level higher
+        var h3 = document.createElement('h3');
+        h3.className = title.className;
+        h3.innerHTML = title.innerHTML;
+        title.parentNode.replaceChild(h3, title);
+      }
+      selectedList.appendChild(card);
+    });
 
-    chips.forEach(function (chip) {
-      var topic = chip.getAttribute('data-filter');
-      var n = topic === 'all' ? pubs.length : pubs.filter(function (p) { return p.querySelector('.tag.' + topic); }).length;
-      var count = document.createElement('span');
-      count.className = 'count';
-      count.textContent = n;
-      chip.appendChild(count);
-
-      chip.addEventListener('click', function () {
-        var pressed = chip.getAttribute('aria-pressed') === 'true';
-        var active = pressed ? 'all' : topic;
-        chips.forEach(function (c) {
-          c.setAttribute('aria-pressed', String(c.getAttribute('data-filter') === active));
-        });
-        pubs.forEach(function (p) {
-          p.hidden = active !== 'all' && !p.querySelector('.tag.' + active);
-        });
-        years.forEach(function (y) {
-          y.hidden = !y.querySelector('.pub:not([hidden])');
-        });
+    var select = function (tab) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+    };
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { select(tab); });
+      tab.addEventListener('keydown', function (e) {
+        var keys = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 };
+        if (!(e.key in keys)) return;
+        e.preventDefault();
+        var next = tabs[(keys[e.key] + tabs.length) % tabs.length];
+        select(next);
+        next.focus();
       });
     });
-    filter.hidden = false;
+    select(tabs[0]);
+    document.querySelector('.tabs').hidden = false;
   }
 
   var year = document.getElementById('year');

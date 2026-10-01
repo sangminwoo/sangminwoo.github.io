@@ -181,407 +181,399 @@
 
     <section id="publications" class="section">
       <div class="container">
-        <h2 class="section-title">Publications</h2>
+        <div class="section-head">
+          <h2 class="section-title">Publications</h2>
+          <div class="tabs" role="tablist" aria-label="Publications" hidden>
+            <button type="button" class="tab" role="tab" id="tab-selected" aria-controls="panel-selected" aria-selected="true">Selected</button>
+            <button type="button" class="tab" role="tab" id="tab-full" aria-controls="panel-full" aria-selected="false" tabindex="-1">Full</button>
+          </div>
+        </div>
+        <p class="section-note">* Equal contribution</p>
 
-        <div class="pub-filter" role="group" aria-label="Filter publications by topic" hidden>
-          <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
-          <button type="button" class="chip" data-filter="multimodal" aria-pressed="false">Multi-modal</button>
-          <button type="button" class="chip" data-filter="genai" aria-pressed="false">Gen AI</button>
-          <button type="button" class="chip" data-filter="agent" aria-pressed="false">Agent</button>
-          <button type="button" class="chip" data-filter="video" aria-pressed="false">Video</button>
-          <button type="button" class="chip" data-filter="image" aria-pressed="false">Image</button>
-          <button type="button" class="chip" data-filter="learning" aria-pressed="false">Learning</button>
+        <!-- The Selected tab is built from entries marked class="pub selected" (first/co-first-author papers at
+             top-tier venues, plus key preprints). Topic tags: multimodal, genai, agent, video, image, learning. -->
+        <div class="pub-panel" id="panel-selected" role="tabpanel" aria-labelledby="tab-selected" hidden>
+          <ul class="pubs" id="pub-selected"></ul>
         </div>
 
-        <!-- Topic tags: multimodal, genai, agent, video, image, learning (they also drive the filter above). -->
+        <div class="pub-panel pub-panel-full" id="panel-full" role="tabpanel" aria-labelledby="tab-full">
+          <div class="pub-year">
+            <h3 class="year">2026</h3>
+            <ul class="pubs">
+              <!-- <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2026_arxiv_skilleval.png" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag agent">Agent</span></div>
+                  <h4 class="pub-title">Skill Eval</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Vinayak Arannil, Haibo Ding</p>
+                  <p class="pub-venue">arXiv 2026</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/">Paper</a></p>
+                </div>
+              </li> -->
 
-        <div class="pub-year">
-          <h3 class="year">2026</h3>
-          <ul class="pubs">
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2026_arxiv_vla.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag agent">Agent</span></div>
+                  <h4 class="pub-title">StructRL: Online Structured Reinforcement Learning for Long-Horizon Vision-Language-Action Tasks</h4>
+                  <p class="pub-authors">Ziyi Yin*, <b>Sangmin Woo*</b>, Kang Zhou, Sungyeon Kim, Aosong Feng, Haibo Ding, Luke Huan</p>
+                  <p class="pub-venue">arXiv 2026</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2609.36352">Paper</a><a href="https://github.com/amazon-science/StructRL">Code</a><a href="https://amazon-science.github.io/StructRL">Project</a></p>
+                </div>
+              </li>
 
-            <!-- <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_arxiv_skilleval.png" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag agent">Agent</span></div>
-                <h4 class="pub-title">Skill Eval</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Vinayak Arannil, Haibo Ding</p>
-                <p class="pub-venue">arXiv 2026</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/">Paper</a></p>
-              </div>
-            </li> -->
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2026_arxiv_evalagent.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag agent">Agent</span></div>
+                  <h4 class="pub-title">An Empirical Study of Automating Agent Evaluation</h4>
+                  <p class="pub-authors">Kang Zhou*, <b>Sangmin Woo*</b>, Haibo Ding, Kiran Ramnath, Subramanian Chidambaram, Aosong Feng, Vinayak Arannil, Muhyun Kim, Ishan Singh, Darren Wang, Zhichao Xu, Megha Gandhi, Nirmal Prabhu, Soumya Smruti Mishra, Smeet Dhakecha, Vivek Singh, Gouri Pandeshwar, Lin Lee Cheong</p>
+                  <p class="pub-venue">arXiv 2026</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2605.11378">Paper</a><a href="https://github.com/awslabs/Agent-EvalKit">Code</a><a href="https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit/">Blog</a></p>
+                </div>
+              </li>
 
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_arxiv_vla.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag agent">Agent</span></div>
-                <h4 class="pub-title">StructRL: Online Structured Reinforcement Learning for Long-Horizon Vision-Language-Action Tasks</h4>
-                <p class="pub-authors">Ziyi Yin*, <b>Sangmin Woo*</b>, Kang Zhou, Sungyeon Kim, Aosong Feng, Haibo Ding, Luke Huan <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">arXiv 2026</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2609.36352">Paper</a><a href="https://github.com/amazon-science/StructRL">Code</a><a href="https://amazon-science.github.io/StructRL">Project</a></p>
-              </div>
-            </li>
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2026_tmlr_rag.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag agent">Agent</span></div>
+                  <h4 class="pub-title">Beyond Correctness: Rewarding Faithful Reasoning in Retrieval-Augmented Generation</h4>
+                  <p class="pub-authors">Zhichao Xu*, Zongyu Wu*, Yun Zhou, Aosong Feng, Kang Zhou, <b>Sangmin Woo</b>, Kiran Ramnath, Yijun Tian, Xuan Qi, Weikang Qiu, Lin Lee Cheong, Haibo Ding</p>
+                  <p class="pub-venue">TMLR 2026 <span class="pub-note">KnowFM @ ACL 2026</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2510.13272">Paper</a></p>
+                </div>
+              </li>
 
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_arxiv_evalagent.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag agent">Agent</span></div>
-                <h4 class="pub-title">An Empirical Study of Automating Agent Evaluation</h4>
-                <p class="pub-authors">Kang Zhou*, <b>Sangmin Woo*</b>, Haibo Ding, Kiran Ramnath, Subramanian Chidambaram, Aosong Feng, Vinayak Arannil, Muhyun Kim, Ishan Singh, Darren Wang, Zhichao Xu, Megha Gandhi, Nirmal Prabhu, Soumya Smruti Mishra, Smeet Dhakecha, Vivek Singh, Gouri Pandeshwar, Lin Lee Cheong <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">arXiv 2026</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2605.11378">Paper</a><a href="https://github.com/awslabs/Agent-EvalKit">Code</a><a href="https://aws.amazon.com/blogs/machine-learning/evaluate-ai-agents-systematically-with-agent-evalkit/">Blog</a></p>
-              </div>
-            </li>
+              <!-- <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2026_arxiv_vla.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">StaticCache: Efficient Vision-Language-Action Model via Disentangled Static Token Caching</h4>
+                  <p class="pub-authors">Weikang Qiu, Aosong Feng, <b>Sangmin Woo</b>, Zhichao Xu, Kiran Ramnath, Kang Zhou, Yun Zhou, Balasubramaniam Srinivasan, Haibo Ding, Lin Lee Cheong</p>
+                  <p class="pub-venue">arXiv 2026</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2604.00000">Paper</a></p>
+                </div>
+              </li> -->
 
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_tmlr_rag.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag agent">Agent</span></div>
-                <h4 class="pub-title">Beyond Correctness: Rewarding Faithful Reasoning in Retrieval-Augmented Generation</h4>
-                <p class="pub-authors">Zhichao Xu*, Zongyu Wu*, Yun Zhou, Aosong Feng, Kang Zhou, <b>Sangmin Woo</b>, Kiran Ramnath, Yijun Tian, Xuan Qi, Weikang Qiu, Lin Lee Cheong, Haibo Ding</p>
-                <p class="pub-venue">TMLR 2026 <span class="pub-note">KnowFM @ ACL 2026</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2510.13272">Paper</a></p>
-              </div>
-            </li>
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2026_eacl_mle.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag agent">Agent</span></div>
+                  <h4 class="pub-title">Learning to Ideate for Machine Learning Engineering Agents</h4>
+                  <p class="pub-authors">Yunxiang Zhang, Kang Zhou, Zhichao Xu, Kiran Ramnath, Yun Zhou, <b>Sangmin Woo</b>, Haibo Ding, Lin Lee Cheong</p>
+                  <p class="pub-venue">EACL 2026 <span class="pub-note">Oral presentation</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2601.17596">Paper</a></p>
+                </div>
+              </li>
 
-            <!-- <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_arxiv_vla.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">StaticCache: Efficient Vision-Language-Action Model via Disentangled Static Token Caching</h4>
-                <p class="pub-authors">Weikang Qiu, Aosong Feng, <b>Sangmin Woo</b>, Zhichao Xu, Kiran Ramnath, Kang Zhou, Yun Zhou, Balasubramaniam Srinivasan, Haibo Ding, Lin Lee Cheong</p>
-                <p class="pub-venue">arXiv 2026</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2604.00000">Paper</a></p>
-              </div>
-            </li> -->
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2026_eacl_dlmmct.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">Diffusion Language Model Inference with Monte Carlo Tree Search</h4>
+                  <p class="pub-authors">Zheng Huang, Kiran Ramnath, Yueyan Chen, Aosong Feng, <b>Sangmin Woo</b>, Balasubramaniam Srinivasan, Zhichao Xu, Kang Zhou, Shuai Wang, Haibo Ding, Lin Lee Cheong</p>
+                  <p class="pub-venue">EACL 2026 Findings</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2512.12168">Paper</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_eacl_mle.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag agent">Agent</span></div>
-                <h4 class="pub-title">Learning to Ideate for Machine Learning Engineering Agents</h4>
-                <p class="pub-authors">Yunxiang Zhang, Kang Zhou, Zhichao Xu, Kiran Ramnath, Yun Zhou, <b>Sangmin Woo</b>, Haibo Ding, Lin Lee Cheong</p>
-                <p class="pub-venue">EACL 2026 <span class="pub-note">Oral presentation</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2601.17596">Paper</a></p>
-              </div>
-            </li>
+          <div class="pub-year">
+            <h3 class="year">2025</h3>
+            <ul class="pubs">
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2025_eswa_what.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">What and When to Look?: Temporal Span Proposal Network for Video Visual Relation Detection</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</p>
+                  <p class="pub-venue">ESWA 2025 <span class="pub-note">IF 8.6</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2107.07154">Paper</a><a href="https://github.com/sangminwoo/Temporal-Span-Proposal-Network-VidVRD">Code</a></p>
+                </div>
+              </li>
 
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2026_eacl_dlmmct.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">Diffusion Language Model Inference with Monte Carlo Tree Search</h4>
-                <p class="pub-authors">Zheng Huang, Kiran Ramnath, Yueyan Chen, Aosong Feng, <b>Sangmin Woo</b>, Balasubramaniam Srinivasan, Zhichao Xu, Kang Zhou, Shuai Wang, Haibo Ding, Lin Lee Cheong</p>
-                <p class="pub-venue">EACL 2026 Findings</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2512.12168">Paper</a></p>
-              </div>
-            </li>
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2025_emnlp_apo_survey.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">A Systematic Survey of Automatic Prompt Optimization Techniques</h4>
+                  <p class="pub-authors">Kiran Ramnath, Kang Zhou, Sheng Guan, Soumya Smruti Mishra, Xuan Qi, Zhengyuan Shen, Shuai Wang, <b>Sangmin Woo</b>, Sullam Jeoung, Yawei Wang, Haozhu Wang, Han Ding, Yuzhe Lu, Zhichao Xu, Yun Zhou, Balasubramaniam Srinivasan, Qiaojing Yan, Yueyan Chen, Haibo Ding, Panpan Xu, Lin Lee Cheong</p>
+                  <p class="pub-venue">EMNLP 2025</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2502.16923">Paper</a></p>
+                </div>
+              </li>
 
-          </ul>
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2025_acl_avisc.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
+                  <h4 class="pub-title">Don’t Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models</h4>
+                  <p class="pub-authors"><b>Sangmin Woo*</b>, Donguk Kim*, Jaehyuk Jang*, Yubin Choi, Changick Kim</p>
+                  <p class="pub-venue">ACL 2025 Findings</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2405.17820">Paper</a><a href="https://github.com/sangminwoo/AvisC">Code</a><a href="https://sangminwoo.github.io/AvisC/">Project</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2025_cviu_modality.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Modality Mixer Exploiting Complementary Information for Multi-modal Action Recognition</h4>
+                  <p class="pub-authors">Sumin Lee, <b>Sangmin Woo</b>, Muhammad Adi Nugroho, Changick Kim</p>
+                  <p class="pub-venue">CVIU 2025 <span class="pub-note">IF 4.8</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2311.12344">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2025_cvpr_prodial.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag learning">Learning</span></div>
+                  <h4 class="pub-title">Parameter Efficient Mamba Tuning via Projector-targeted Diagonal-centric Linear Transformation</h4>
+                  <p class="pub-authors">Seokil Ham, Hee-Seon Kim, <b>Sangmin Woo</b>, Changick Kim</p>
+                  <p class="pub-venue">CVPR 2025</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2411.15224">Paper</a><!-- <a href="https://github.com/SeokilHam/ProDiaL">Code</a> (repo not public yet) --></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2025_naacl_bbvpe.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
+                  <h4 class="pub-title">Black-Box Visual Prompt Engineering for Mitigating Object Hallucination in Large Vision Language Models</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Kang Zhou, Yun Zhou, Shuai Wang, Sheng Guan, Haibo Ding, Lin Lee Cheong</p>
+                  <p class="pub-venue">NAACL 2025</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2504.21559">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2025_aaai_dmp.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">Diffusion Model Patching via Mixture-of-Prompts</h4>
+                  <p class="pub-authors">Seokil Ham*, <b>Sangmin Woo*</b>, Jinyoung Kim, Hyojun Go, Byeongjun Park, Changick Kim</p>
+                  <p class="pub-venue">AAAI 2025</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2405.17825">Paper</a><a href="https://github.com/sangminwoo/DMP">Code</a><a href="https://sangminwoo.github.io/DMP/">Project</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pub-year">
+            <h3 class="year">2024</h3>
+            <ul class="pubs">
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2024_arxiv_ritual.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
+                  <h4 class="pub-title">RITUAL: Random Image Transformations as a Universal Anti-hallucination Lever in Large Vision Language Models</h4>
+                  <p class="pub-authors"><b>Sangmin Woo*</b>, Jaehyuk Jang*, Donguk Kim*, Yubin Choi, Changick Kim</p>
+                  <p class="pub-venue">arXiv 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2405.17821">Paper</a><a href="https://github.com/sangminwoo/RITUAL">Code</a><a href="https://sangminwoo.github.io/RITUAL/">Project</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2024_eccv_flamingnet.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Flow-Assisted Motion Learning Network for Weakly-Supervised Group Activity Recognition</h4>
+                  <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Jinyoung Park, Yooseung Wang, Donguk Kim, Changick Kim</p>
+                  <p class="pub-venue">ECCV 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2405.18012">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2024_eccv_spdpnet.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Spatio-Temporal Proximity-Aware Dual-Path Model for Panoramic Activity Recognition</h4>
+                  <p class="pub-authors">Sumin Lee, Yooseung Wang, <b>Sangmin Woo</b>, Changick Kim</p>
+                  <p class="pub-venue">ECCV 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2403.14113">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2024_eccv_switch_dit.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">Switch Diffusion Transformer: Synergizing Denoising Tasks with Sparse Mixture-of-Experts</h4>
+                  <p class="pub-authors">Byeongjun Park, Hyojun Go, Jinyoung Kim, <b>Sangmin Woo</b>, Seokil Ham, Changick Kim</p>
+                  <p class="pub-venue">ECCV 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2403.09176">Paper</a><a href="https://github.com/byeongjun-park/Switch-DiT">Code</a><a href="https://byeongjun-park.github.io/Switch-DiT">Project</a></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2024_cvpr_harmonyview.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D</h4>
+                  <p class="pub-authors"><b>Sangmin Woo*</b>, Byeongjun Park*, Hyojun Go, Jinyoung Kim, Changick Kim</p>
+                  <p class="pub-venue">CVPR 2024 <span class="pub-note">Featured by <a href="https://huggingface.co/papers?date=2023-12-27">Hugging Face Daily Papers</a></span> <span class="pub-note">Finalist, Qualcomm Innovation Fellowship 2024 Korea</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2312.15980">Paper</a><a href="https://github.com/byeongjun-park/HarmonyView">Code</a><a href="https://byeongjun-park.github.io/HarmonyView">Project</a><a href="https://huggingface.co/spaces/byeongjun-park/HarmonyView">Demo</a></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2024_iclr_denoising.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
+                  <h4 class="pub-title">Denoising Task Routing for Diffusion Models</h4>
+                  <p class="pub-authors">Byeongjun Park*, <b>Sangmin Woo*</b>, Hyojun Go*, Jinyoung Kim*, Changick Kim</p>
+                  <p class="pub-venue">ICLR 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2310.07138">Paper</a><a href="https://github.com/byeongjun-park/DTR">Code</a><a href="https://byeongjun-park.github.io/DTR">Project</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2024_wacv_sketch.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Sketch-based Video Object Localization</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, So-Yeong Jeon, Jinyoung Park, Minji Son, Sumin Lee, Changick Kim</p>
+                  <p class="pub-venue">WACV 2024</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2304.00450">Paper</a><a href="https://github.com/sangminwoo/SVOL">Code</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pub-year">
+            <h3 class="year">2023</h3>
+            <ul class="pubs">
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2023_vcip_ahfu.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">AHFu-Net: Align, Hallucinate, and Fuse Network for Missing Multimodal Action Recognition</h4>
+                  <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</p>
+                  <p class="pub-venue">VCIP 2023 <span class="pub-note">Oral presentation</span></p>
+                  <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10402736">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2023_vcip_multi.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Multi-modal Social Group Activity Recognition in Panoramic Scene</h4>
+                  <p class="pub-authors">Donguk Kim, Sumin Lee, <b>Sangmin Woo</b>, Jinyoung Park, Muhammad Adi Nugroho, Changick Kim</p>
+                  <p class="pub-venue">VCIP 2023</p>
+                  <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10402675">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2023_cviu_cross.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Cross-Modal Alignment and Translation for Missing Modality Action Recognition</h4>
+                  <p class="pub-authors">Yeonju Park, <b>Sangmin Woo</b>, Sumin Lee, Muhammad Adi Nugroho, Changick Kim</p>
+                  <p class="pub-venue">CVIU 2023 <span class="pub-note">IF 4.8</span></p>
+                  <p class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S1077314223001856">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2023_iccv_audio.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Audio-Visual Glance Network for Efficient Video Recognition</h4>
+                  <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</p>
+                  <p class="pub-venue">ICCV 2023 <span class="pub-note">Invited Paper Talk @ CARAI Workshop</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2308.09322">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2023_aaai_towards.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Towards Good Practices for Missing Modality Robust Action Recognition</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Sumin Lee, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</p>
+                  <p class="pub-venue">AAAI 2023 <span class="pub-note">Oral presentation</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2211.13916">Paper</a><a href="https://github.com/sangminwoo/ActionMAE">Code</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2023_wacv_modality.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Modality Mixer for Multi-modal Action Recognition</h4>
+                  <p class="pub-authors">Sumin Lee, <b>Sangmin Woo</b>, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</p>
+                  <p class="pub-venue">WACV 2023</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2208.11314">Paper</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pub-year">
+            <h3 class="year">2022 &amp; earlier</h3>
+            <ul class="pubs">
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2022_arxiv_explore.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
+                  <h4 class="pub-title">Explore and Match: Bridging Proposal-Based and Proposal-Free with Transformer for Sentence Grounding in Videos</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Jinyoung Park, Inyong Koo, Sumin Lee, Minki Jeong, Changick Kim</p>
+                  <p class="pub-venue">arXiv 2022 <span class="pub-note">Finalist, 29th HumanTech Paper Award, Samsung Electronics Co., Ltd</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2201.10168">Paper</a><a href="https://github.com/sangminwoo/Explore-And-Match">Code</a></p>
+                </div>
+              </li>
+
+              <li class="pub selected">
+                <img class="pub-thumb" src="/papers/images/2022_tnnls_tackling.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag image">Image</span></div>
+                  <h4 class="pub-title">Tackling the Challenges in Scene Graph Generation with Local-to-Global Interactions</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</p>
+                  <p class="pub-venue">TNNLS 2022 <span class="pub-note">IF 14.2</span></p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2106.08543">Paper</a><a href="https://github.com/sangminwoo/Local-to-Global-Interaction-Networks-SGG">Code</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2022_icip_temporal.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag image">Image</span></div>
+                  <h4 class="pub-title">Temporal Flow Mask Attention for Open-Set Long-Tailed Recognition of Wild Animals in Camera-Trap Images</h4>
+                  <p class="pub-authors">Jeongsoo Kim, <b>Sangmin Woo</b>, Byeongjun Park, Changick Kim</p>
+                  <p class="pub-venue">ICIP 2022</p>
+                  <p class="pub-links"><a href="https://arxiv.org/abs/2208.14625">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2022_appliedsciences_impact.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag learning">Learning</span></div>
+                  <h4 class="pub-title">Impact of Sentence Representation Matching in Neural Machine Translation</h4>
+                  <p class="pub-authors">Heeseung Jung, Kangil Kim, Jong-Hun Shin, Seung-Hoon Na, Sangkeun Jung, <b>Sangmin Woo</b></p>
+                  <p class="pub-venue">Applied Sciences 2022 <span class="pub-note">IF 2.8</span></p>
+                  <p class="pub-links"><a href="https://www.mdpi.com/2076-3417/12/3/1313">Paper</a></p>
+                </div>
+              </li>
+
+              <li class="pub">
+                <img class="pub-thumb" src="/papers/images/2021_electronics_revisiting.webp" alt="" loading="lazy" decoding="async">
+                <div>
+                  <div class="pub-tags"><span class="tag learning">Learning</span></div>
+                  <h4 class="pub-title">Revisiting Dropout: Escaping Pressure for Training Neural Networks with Multiple Costs</h4>
+                  <p class="pub-authors"><b>Sangmin Woo</b>, Kangil Kim, Junhyug Noh, Jong-Hun Shin, Seung-Hoon Na</p>
+                  <p class="pub-venue">Electronics 2021 <span class="pub-note">IF 2.6</span></p>
+                  <p class="pub-links"><a href="https://www.mdpi.com/2079-9292/10/9/989">Paper</a><a href="https://github.com/sangminwoo/Cost-Out-Multitask-Learning">Code</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="pub-year">
-          <h3 class="year">2025</h3>
-          <ul class="pubs">
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_eswa_what.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag video">Video</span></div>
-                <h4 class="pub-title">What and When to Look?: Temporal Span Proposal Network for Video Visual Relation Detection</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</p>
-                <p class="pub-venue">ESWA 2025 <span class="pub-note">IF 8.6</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2107.07154">Paper</a><a href="https://github.com/sangminwoo/Temporal-Span-Proposal-Network-VidVRD">Code</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_emnlp_apo_survey.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">A Systematic Survey of Automatic Prompt Optimization Techniques</h4>
-                <p class="pub-authors">Kiran Ramnath, Kang Zhou, Sheng Guan, Soumya Smruti Mishra, Xuan Qi, Zhengyuan Shen, Shuai Wang, <b>Sangmin Woo</b>, Sullam Jeoung, Yawei Wang, Haozhu Wang, Han Ding, Yuzhe Lu, Zhichao Xu, Yun Zhou, Balasubramaniam Srinivasan, Qiaojing Yan, Yueyan Chen, Haibo Ding, Panpan Xu, Lin Lee Cheong</p>
-                <p class="pub-venue">EMNLP 2025</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2502.16923">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_acl_avisc.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
-                <h4 class="pub-title">Don’t Miss the Forest for the Trees: Attentional Vision Calibration for Large Vision Language Models</h4>
-                <p class="pub-authors"><b>Sangmin Woo*</b>, Donguk Kim*, Jaehyuk Jang*, Yubin Choi, Changick Kim <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">ACL 2025 Findings</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2405.17820">Paper</a><a href="https://github.com/sangminwoo/AvisC">Code</a><a href="https://sangminwoo.github.io/AvisC/">Project</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_cviu_modality.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Modality Mixer Exploiting Complementary Information for Multi-modal Action Recognition</h4>
-                <p class="pub-authors">Sumin Lee, <b>Sangmin Woo</b>, Muhammad Adi Nugroho, Changick Kim</p>
-                <p class="pub-venue">CVIU 2025 <span class="pub-note">IF 4.8</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2311.12344">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_cvpr_prodial.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag learning">Learning</span></div>
-                <h4 class="pub-title">Parameter Efficient Mamba Tuning via Projector-targeted Diagonal-centric Linear Transformation</h4>
-                <p class="pub-authors">Seokil Ham, Hee-Seon Kim, <b>Sangmin Woo</b>, Changick Kim</p>
-                <p class="pub-venue">CVPR 2025</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2411.15224">Paper</a><!-- <a href="https://github.com/SeokilHam/ProDiaL">Code</a> (repo not public yet) --></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_naacl_bbvpe.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
-                <h4 class="pub-title">Black-Box Visual Prompt Engineering for Mitigating Object Hallucination in Large Vision Language Models</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Kang Zhou, Yun Zhou, Shuai Wang, Sheng Guan, Haibo Ding, Lin Lee Cheong</p>
-                <p class="pub-venue">NAACL 2025</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2504.21559">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2025_aaai_dmp.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">Diffusion Model Patching via Mixture-of-Prompts</h4>
-                <p class="pub-authors">Seokil Ham*, <b>Sangmin Woo*</b>, Jinyoung Kim, Hyojun Go, Byeongjun Park, Changick Kim <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">AAAI 2025</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2405.17825">Paper</a><a href="https://github.com/sangminwoo/DMP">Code</a><a href="https://sangminwoo.github.io/DMP/">Project</a></p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="pub-year">
-          <h3 class="year">2024</h3>
-          <ul class="pubs">
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_arxiv_ritual.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span><span class="tag multimodal">Multi-modal</span></div>
-                <h4 class="pub-title">RITUAL: Random Image Transformations as a Universal Anti-hallucination Lever in Large Vision Language Models</h4>
-                <p class="pub-authors"><b>Sangmin Woo*</b>, Jaehyuk Jang*, Donguk Kim*, Yubin Choi, Changick Kim <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">arXiv 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2405.17821">Paper</a><a href="https://github.com/sangminwoo/RITUAL">Code</a><a href="https://sangminwoo.github.io/RITUAL/">Project</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_eccv_flamingnet.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Flow-Assisted Motion Learning Network for Weakly-Supervised Group Activity Recognition</h4>
-                <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Jinyoung Park, Yooseung Wang, Donguk Kim, Changick Kim</p>
-                <p class="pub-venue">ECCV 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2405.18012">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_eccv_spdpnet.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Spatio-Temporal Proximity-Aware Dual-Path Model for Panoramic Activity Recognition</h4>
-                <p class="pub-authors">Sumin Lee, Yooseung Wang, <b>Sangmin Woo</b>, Changick Kim</p>
-                <p class="pub-venue">ECCV 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2403.14113">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_eccv_switch_dit.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">Switch Diffusion Transformer: Synergizing Denoising Tasks with Sparse Mixture-of-Experts</h4>
-                <p class="pub-authors">Byeongjun Park, Hyojun Go, Jinyoung Kim, <b>Sangmin Woo</b>, Seokil Ham, Changick Kim</p>
-                <p class="pub-venue">ECCV 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2403.09176">Paper</a><a href="https://github.com/byeongjun-park/Switch-DiT">Code</a><a href="https://byeongjun-park.github.io/Switch-DiT">Project</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_cvpr_harmonyview.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D</h4>
-                <p class="pub-authors"><b>Sangmin Woo*</b>, Byeongjun Park*, Hyojun Go, Jinyoung Kim, Changick Kim <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">CVPR 2024 <span class="pub-note">Featured by <a href="https://huggingface.co/papers?date=2023-12-27">Hugging Face Daily Papers</a></span> <span class="pub-note">Finalist, Qualcomm Innovation Fellowship 2024 Korea</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2312.15980">Paper</a><a href="https://github.com/byeongjun-park/HarmonyView">Code</a><a href="https://byeongjun-park.github.io/HarmonyView">Project</a><a href="https://huggingface.co/spaces/byeongjun-park/HarmonyView">Demo</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_iclr_denoising.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag genai">Gen AI</span></div>
-                <h4 class="pub-title">Denoising Task Routing for Diffusion Models</h4>
-                <p class="pub-authors">Byeongjun Park*, <b>Sangmin Woo*</b>, Hyojun Go*, Jinyoung Kim*, Changick Kim <span class="eq">(*Equal contribution)</span></p>
-                <p class="pub-venue">ICLR 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2310.07138">Paper</a><a href="https://github.com/byeongjun-park/DTR">Code</a><a href="https://byeongjun-park.github.io/DTR">Project</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2024_wacv_sketch.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Sketch-based Video Object Localization</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, So-Yeong Jeon, Jinyoung Park, Minji Son, Sumin Lee, Changick Kim</p>
-                <p class="pub-venue">WACV 2024</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2304.00450">Paper</a><a href="https://github.com/sangminwoo/SVOL">Code</a></p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="pub-year">
-          <h3 class="year">2023</h3>
-          <ul class="pubs">
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_vcip_ahfu.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">AHFu-Net: Align, Hallucinate, and Fuse Network for Missing Multimodal Action Recognition</h4>
-                <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</p>
-                <p class="pub-venue">VCIP 2023 <span class="pub-note">Oral presentation</span></p>
-                <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10402736">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_vcip_multi.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Multi-modal Social Group Activity Recognition in Panoramic Scene</h4>
-                <p class="pub-authors">Donguk Kim, Sumin Lee, <b>Sangmin Woo</b>, Jinyoung Park, Muhammad Adi Nugroho, Changick Kim</p>
-                <p class="pub-venue">VCIP 2023</p>
-                <p class="pub-links"><a href="https://ieeexplore.ieee.org/document/10402675">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_cviu_cross.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Cross-Modal Alignment and Translation for Missing Modality Action Recognition</h4>
-                <p class="pub-authors">Yeonju Park, <b>Sangmin Woo</b>, Sumin Lee, Muhammad Adi Nugroho, Changick Kim</p>
-                <p class="pub-venue">CVIU 2023 <span class="pub-note">IF 4.8</span></p>
-                <p class="pub-links"><a href="https://www.sciencedirect.com/science/article/pii/S1077314223001856">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_iccv_audio.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Audio-Visual Glance Network for Efficient Video Recognition</h4>
-                <p class="pub-authors">Muhammad Adi Nugroho, <b>Sangmin Woo</b>, Sumin Lee, Changick Kim</p>
-                <p class="pub-venue">ICCV 2023 <span class="pub-note">Invited Paper Talk @ CARAI Workshop</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2308.09322">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_aaai_towards.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Towards Good Practices for Missing Modality Robust Action Recognition</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Sumin Lee, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</p>
-                <p class="pub-venue">AAAI 2023 <span class="pub-note">Oral presentation</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2211.13916">Paper</a><a href="https://github.com/sangminwoo/ActionMAE">Code</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2023_wacv_modality.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Modality Mixer for Multi-modal Action Recognition</h4>
-                <p class="pub-authors">Sumin Lee, <b>Sangmin Woo</b>, Yeonju Park, Muhammad Adi Nugroho, Changick Kim</p>
-                <p class="pub-venue">WACV 2023</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2208.11314">Paper</a></p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="pub-year">
-          <h3 class="year">2022 &amp; earlier</h3>
-          <ul class="pubs">
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2022_arxiv_explore.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag multimodal">Multi-modal</span><span class="tag video">Video</span></div>
-                <h4 class="pub-title">Explore and Match: Bridging Proposal-Based and Proposal-Free with Transformer for Sentence Grounding in Videos</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Jinyoung Park, Inyong Koo, Sumin Lee, Minki Jeong, Changick Kim</p>
-                <p class="pub-venue">arXiv 2022 <span class="pub-note">Finalist, 29th HumanTech Paper Award, Samsung Electronics Co., Ltd</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2201.10168">Paper</a><a href="https://github.com/sangminwoo/Explore-And-Match">Code</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2022_tnnls_tackling.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag image">Image</span></div>
-                <h4 class="pub-title">Tackling the Challenges in Scene Graph Generation with Local-to-Global Interactions</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Junhyug Noh, Kangil Kim</p>
-                <p class="pub-venue">TNNLS 2022 <span class="pub-note">IF 14.2</span></p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2106.08543">Paper</a><a href="https://github.com/sangminwoo/Local-to-Global-Interaction-Networks-SGG">Code</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2022_icip_temporal.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag image">Image</span></div>
-                <h4 class="pub-title">Temporal Flow Mask Attention for Open-Set Long-Tailed Recognition of Wild Animals in Camera-Trap Images</h4>
-                <p class="pub-authors">Jeongsoo Kim, <b>Sangmin Woo</b>, Byeongjun Park, Changick Kim</p>
-                <p class="pub-venue">ICIP 2022</p>
-                <p class="pub-links"><a href="https://arxiv.org/abs/2208.14625">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2022_appliedsciences_impact.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag learning">Learning</span></div>
-                <h4 class="pub-title">Impact of Sentence Representation Matching in Neural Machine Translation</h4>
-                <p class="pub-authors">Heeseung Jung, Kangil Kim, Jong-Hun Shin, Seung-Hoon Na, Sangkeun Jung, <b>Sangmin Woo</b></p>
-                <p class="pub-venue">Applied Sciences 2022 <span class="pub-note">IF 2.8</span></p>
-                <p class="pub-links"><a href="https://www.mdpi.com/2076-3417/12/3/1313">Paper</a></p>
-              </div>
-            </li>
-
-            <li class="pub">
-              <img class="pub-thumb" src="/papers/images/2021_electronics_revisiting.webp" alt="" loading="lazy" decoding="async">
-              <div>
-                <div class="pub-tags"><span class="tag learning">Learning</span></div>
-                <h4 class="pub-title">Revisiting Dropout: Escaping Pressure for Training Neural Networks with Multiple Costs</h4>
-                <p class="pub-authors"><b>Sangmin Woo</b>, Kangil Kim, Junhyug Noh, Jong-Hun Shin, Seung-Hoon Na</p>
-                <p class="pub-venue">Electronics 2021 <span class="pub-note">IF 2.6</span></p>
-                <p class="pub-links"><a href="https://www.mdpi.com/2079-9292/10/9/989">Paper</a><a href="https://github.com/sangminwoo/Cost-Out-Multitask-Learning">Code</a></p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
       </div>
     </section>
 
